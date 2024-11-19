@@ -1,0 +1,59 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Images/Bk_Image.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container {
+    text-align: center;
+    color: white; /* Adjust this if the background makes text hard to read */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.logo {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 50px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 200px; /* Adjust size as needed */
+        height: auto;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+}

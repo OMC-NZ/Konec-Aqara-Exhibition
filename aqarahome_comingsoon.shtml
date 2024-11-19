@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqara Home - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Images/Aqara_Logo_White.png" alt="Aqara Logo" class="logo">
+        <h2>Aqara Home</h2>
+        <h1>COMING SOON</h1>
+    </div>
+</body>
+</html>
