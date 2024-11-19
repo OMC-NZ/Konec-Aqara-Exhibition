@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/2degrees",
+        "statusCode": 307
+      }
+    ]
+  }
+  
