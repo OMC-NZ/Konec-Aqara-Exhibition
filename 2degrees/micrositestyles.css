@@ -115,6 +115,8 @@ nav ul li a:hover {
         font-size: 1.2em; /* Slightly larger font for visibility */
         padding: 0.2em 0.2em;
         text-align: center;
+        display: block;
+        width: 100%;
     }
 }
 
