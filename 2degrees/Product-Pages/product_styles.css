@@ -168,7 +168,6 @@ nav ul li a:hover {
     }
     nav ul li a {
         font-size: 1em; /* Slightly larger font for visibility */
-        padding: 0.2em 0.2em;
         text-align: center;
         display: block;
         width: 80%;
