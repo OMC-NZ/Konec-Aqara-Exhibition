@@ -167,11 +167,10 @@ nav ul li a:hover {
     }
     nav ul li a {
         font-size: 1em; /* Slightly larger font for visibility */
-        padding: 0.2em 0.2em;
+        padding: 0.2em 0.4em;
         text-align: center;
         display: block;
         width: 80%;
-        box-sizing: border-box;
     }
 }
 
