@@ -150,6 +150,7 @@ nav ul li a:hover {
         height: 50vh;
         background-color: rgba(28, 30, 40, 0.95);
         align-items: center;
+        text-align:center;
         justify-content: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
