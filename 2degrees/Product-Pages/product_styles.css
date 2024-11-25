@@ -144,18 +144,16 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 0;
+        top: 10%;
         right: 0;
         width: 35vw;
         height: 50vh;
         background-color: rgba(28, 30, 40, 0.95);
-        align-items: center;
-        text-align:center;
         justify-content: center;
+        align-items: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
-        padding: 0.5em;
-        margin: 0 1em;
+        padding: 1em;
         box-sizing: border-box;
         z-index: 1000;
     }
@@ -163,17 +161,20 @@ nav ul li a:hover {
         display: flex;
     }
     nav ul li {
-        margin: 1em 0; /* Increased margin for easier use on mobile */
+        margin: 0.7em auto; /* Increased margin for easier use on mobile */
+        display: flex;
+        justify-content: center;
+        width: 80%;
     }
     nav ul li a {
         font-size: 1em; /* Slightly larger font for visibility */
-        padding: 0.2em 0.4em;
+        padding: 0.2em 0.2em;
         text-align: center;
         display: block;
         width: 80%;
+        margin: auto;
     }
 }
-
 /* Buy Now Button */
 .buy-now-btn {
     background-color: #BE3D26;
