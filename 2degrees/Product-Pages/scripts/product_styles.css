@@ -168,7 +168,7 @@ nav ul li a:hover {
         text-align: center;
         display: block;
         width: 90%;
-        padding: 0.25em; /* Add padding for better usability */
+        padding: 0 0.25em; /* Add padding for better usability */
         margin: 0 auto; /* Center align links */
         box-sizing: border-box;
         overflow: hidden; /* Prevent overflow of text */
