@@ -110,7 +110,7 @@ nav ul li a:hover {
         display: flex;
         margin-right: 1em;
         margin-left: 1em;
-        overflow-x: hidden;
+        padding: 0 0.25em 0 0.25em;
     }
     nav ul li a {
         color: #FFFFFF;
