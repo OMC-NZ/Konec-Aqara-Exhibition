@@ -238,7 +238,7 @@ nav ul li a:hover {
     .section1-content h1 {
         font-size: 2em;
         font-weight: 300;
-        padding-top: 25px;
+        padding-top: 30px;
         margin-left: 10px;
         text-align: left;
     }
@@ -321,13 +321,13 @@ nav ul li a:hover {
     .section2-content h1 {
         font-size: 2em;
         font-weight: 300;
-        margin: 0 0.5em;
+        margin-left: 10px;
         text-align: left;
     }
     .section2-content h2 {
         font-size: 1.5em;
-        margin-left: 0.5em;
-        margin-bottom: 0.25em;
+        margin-left: 10px;
+        padding-bottom: 30px;
         font-weight: 200;
         text-align: left;
     }
@@ -476,13 +476,13 @@ nav ul li a:hover {
     .section3-content h1 {
         font-size: 2em;
         font-weight: 300;
-        margin-left: 0.5em;
+        margin-left: 10px;
         text-align: left;
     }
     .section3-content h2 {
         font-size: 1.5em;
-        margin-left: 1em;
-        margin-bottom: 0.5em;
+        margin-left: 10px;
+        padding-bottom: 30px;
         font-weight: 200;
         text-align: left;
     }
@@ -599,7 +599,7 @@ a.store_button:hover {
     .section4-content h1 {
         font-size: 2em;
         font-weight: 300;
-        margin-left: 0.5em;
+        margin-left: 10px;
         text-align: left;
     }
     .section4-content p {
@@ -609,12 +609,11 @@ a.store_button:hover {
         text-align: left;
     }
     .section4-content h2 {
-        margin-bottom: 1em;
-        font-size: 18px;
+        font-size: 1.5em;
+        margin-left: 10px;
+        padding-bottom: 30px;
         font-weight: 200;
-        color: #DFD2B0;
         text-align: left;
-        margin-left: 1.25em;
     }
     .section4-content .store_button {
         display: block;
@@ -758,7 +757,7 @@ a.techsupport_button:hover {
     .section5-content h1 {
         font-size: 2em;
         font-weight: 300;
-        margin-left: 0.5em;
+        margin-left: 10px;
         text-align: left;
     }
     .section5-content p {
@@ -770,10 +769,10 @@ a.techsupport_button:hover {
     }
     .section5-content h2 {
         font-size: 1.5em;
-        margin-left: 0.5em;
-        margin-bottom: 0.25em;
+        margin-left: 10px;
+        padding-bottom: 30px;
         font-weight: 200;
-l        text-align: left;
+        text-align: left;
     }
     .section5-content ul {
         margin-left: 2em;
