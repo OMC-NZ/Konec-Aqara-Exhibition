@@ -89,3 +89,18 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         }
     });
 });
+
+// remove spacing from first page on loading
+document.addEventListener("DOMContentLoaded", () => {
+    const headerHeight = document.querySelector("header").offsetHeight;
+    const hash = window.location.hash;
+    if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - headerHeight,
+                behavior: "smooth",
+            });
+        }
+    }
+});
