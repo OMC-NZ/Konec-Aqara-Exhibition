@@ -129,9 +129,9 @@ nav ul li a:hover {
     #hamburger-menu {
         display: block;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
-        margin: auto 0;
+        transform: translateY(-50%);
         padding-right: 5%;
     }
     nav ul {
