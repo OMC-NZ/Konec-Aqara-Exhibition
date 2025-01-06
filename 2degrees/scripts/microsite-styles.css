@@ -806,14 +806,14 @@ a.techsupport_button:hover {
     }
     .section5-content .warranty {
         display: block;
-        text-align: left; /* Align text to the left */
+        text-align: center;
     }
     .section5-content .warranty a {
         display: block;
-        margin-bottom: 10px; /* Adds space between the links */
+        margin-bottom: 10px;
     }
     .section5-content .warranty span.break {
-        display: none; /* Hide the separator on small screens */
+        display: none;
     }
 }
 
