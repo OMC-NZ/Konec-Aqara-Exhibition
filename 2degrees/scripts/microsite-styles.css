@@ -730,7 +730,8 @@ a.techsupport_button:hover {
     background-color: #FFFFFF;
 }
 .section5-content .warranty {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     color: white;
     padding: 0.5em 0.5em;
     margin: auto;
@@ -787,8 +788,8 @@ a.techsupport_button:hover {
         font-size: 0.85em;
         font-weight: 400;
         margin: 0 0 1em 0;
-        width: 90%;
-        text-align: justify;
+        width: 100%;
+        text-align: left;
     }
     .section5-content .techsupport_button {
         display: block;
@@ -805,12 +806,14 @@ a.techsupport_button:hover {
     }
     .section5-content .warranty {
         display: block;
-        color: white;
-        padding: 0.5em 0.5em;
-        margin: 0 auto 1em auto;
-        font-size: 0.75em;
-        width: 100%;
-        text-align: center;
+        text-align: left; /* Align text to the left */
+    }
+    .section5-content .warranty a {
+        display: block;
+        margin-bottom: 10px; /* Adds space between the links */
+    }
+    .section5-content .warranty span.break {
+        display: none; /* Hide the separator on small screens */
     }
 }
 
