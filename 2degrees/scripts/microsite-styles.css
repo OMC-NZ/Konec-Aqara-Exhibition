@@ -121,7 +121,7 @@ nav ul li a:hover {
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
     text-align: right;
 }
