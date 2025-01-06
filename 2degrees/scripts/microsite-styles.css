@@ -335,7 +335,7 @@ nav ul li a:hover {
     .section2-content p {
         font-size: 0.85em;
         font-weight: 400;
-        margin: 0 auto 1em auto;
+        margin-left: 10px;
         width: 90%;
         text-align: left;
     }
