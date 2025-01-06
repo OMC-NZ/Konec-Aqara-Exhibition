@@ -333,7 +333,7 @@ nav ul li a:hover {
         text-align: left;
     }
     .section2-content p {
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: 400;
         margin-left: 10px;
         width: 90%;
@@ -603,8 +603,9 @@ a.store_button:hover {
         text-align: left;
     }
     .section4-content p {
-        font-size: 0.85em;
-        margin: 0 auto;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 10px;
         width: 90%;
         text-align: left;
     }
@@ -761,9 +762,9 @@ a.techsupport_button:hover {
         text-align: left;
     }
     .section5-content p {
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: 400;
-        margin: 0 auto 1em auto;
+        margin-left: 10px;
         width: 90%;
         text-align: left;
     }
@@ -775,12 +776,12 @@ a.techsupport_button:hover {
         text-align: left;
     }
     .section5-content ul {
-        margin-left: 2em;
+        margin-left: 15px;
         width: 100%;
     }
     .section5-content li {
         list-style-type: none;
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: 400;
         margin: 0 0 1em 0;
         width: 90%;
