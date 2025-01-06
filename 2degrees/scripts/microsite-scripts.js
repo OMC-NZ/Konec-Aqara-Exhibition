@@ -91,16 +91,18 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 // remove spacing from first page on loading
-document.addEventListener("DOMContentLoaded", () => {
-    const headerHeight = document.querySelector("header").offsetHeight;
-    const hash = window.location.hash;
-    if (hash) {
-        const target = document.querySelector(hash);
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const headerHeight = document.querySelector("header").offsetHeight;
+        const targetId = this.getAttribute("href");
+        const target = document.querySelector(targetId);
         if (target) {
+            const scrollPosition = target.offsetTop - headerHeight;
             window.scrollTo({
-                top: target.offsetTop - headerHeight,
+                top: scrollPosition,
                 behavior: "smooth",
             });
         }
-    }
+    });
 });
