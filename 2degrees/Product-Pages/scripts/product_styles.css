@@ -500,6 +500,7 @@ a.buy-now-link {
         border-collapse: collapse;
         margin: 0 auto 1em auto;
         white-space: normal;
+        table-layout: fixed;
     }
     .section3 table td {
         border-bottom: 1px solid #b9b2aa;
@@ -507,6 +508,8 @@ a.buy-now-link {
         font-size: 1em;
         font-weight: 400;
         white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
 
