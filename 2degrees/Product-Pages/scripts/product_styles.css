@@ -91,7 +91,6 @@ nav ul {
     justify-content: center;
     display: flex;
     margin-right: 1em;
-    overflow-x: hidden;
 }
 nav ul li a {
     color: #FFFFFF;
@@ -111,6 +110,7 @@ nav ul li a:hover {
         display: flex;
         margin-right: 1em;
         margin-left: 1em;
+        overflow-x: hidden;
     }
     nav ul li a {
         color: #FFFFFF;
