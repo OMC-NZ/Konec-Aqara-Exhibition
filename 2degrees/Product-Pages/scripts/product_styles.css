@@ -51,8 +51,8 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
     }
 }
 
@@ -72,7 +72,7 @@ header .logo img {
 }
 @media (max-width: 768px) {
     .logo img {
-        max-height: 40px; /* Adjust for smaller screens */
+        max-height: 30px; /* Adjust for smaller screens */
         height: auto;
         width: auto;
         display: block;
