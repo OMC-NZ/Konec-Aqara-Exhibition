@@ -505,7 +505,7 @@ nav ul li a:hover {
         list-style-type: none;
     }
     .accordion-header {
-        align-self: center;
+        margin: 0 auto;
     }
 }
 
