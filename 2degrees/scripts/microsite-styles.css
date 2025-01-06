@@ -238,8 +238,8 @@ nav ul li a:hover {
     .section1-content h1 {
         font-size: 2em;
         font-weight: 300;
-        padding-top: 20px;
-        margin: 0 10px;
+        margin-top: 20px;
+        margin-left: 10px;
         text-align: left;
     }
     .section1-content h2 {
