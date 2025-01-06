@@ -506,6 +506,7 @@ a.buy-now-link {
         padding: 0.2em;
         font-size: 1em;
         font-weight: 400;
+        white-space: normal;
     }
 }
 
