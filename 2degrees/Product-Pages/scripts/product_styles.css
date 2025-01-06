@@ -149,7 +149,7 @@ nav ul li a:hover {
         align-items: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
-        padding: 1em;
+        padding: 0.5em;
         overflow-y: auto;
         box-sizing: border-box;
         z-index: 1000;
@@ -168,7 +168,7 @@ nav ul li a:hover {
         text-align: center;
         display: block;
         width: 90%;
-        padding: 0.5em; /* Add padding for better usability */
+        padding: 0.25em; /* Add padding for better usability */
         margin: 0 auto; /* Center align links */
         box-sizing: border-box;
         overflow: hidden; /* Prevent overflow of text */
