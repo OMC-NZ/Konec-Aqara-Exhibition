@@ -51,8 +51,8 @@ header {
         left: 0;
         right: 0;
         width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
     }
 }
 
@@ -72,7 +72,7 @@ header .logo img {
 }
 @media (max-width: 768px) {
     .logo img {
-        max-height: 40px; /* Adjust for smaller screens */
+        max-height: 30px; /* Adjust for smaller screens */
         height: auto;
         width: auto;
         display: block;
@@ -81,7 +81,7 @@ header .logo img {
 }
 @media (max-width: 480px) {
     .logo img {
-        max-height: 30px; /* Further adjust for extra-small screens */
+        max-height: 25px; /* Further adjust for extra-small screens */
     }
 }
 
@@ -140,15 +140,16 @@ nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 10%;
-        right: 0;
-        width: 30%;
-        height: 40vh;
+        right: 1%;
+        width: auto;
+        height: auto;
+        max-height: 45vh;
         background-color: rgba(28, 30, 40, 0.95);
         justify-content: center;
         align-items: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
-        padding: auto;
+        padding: 0.5em;
         box-sizing: border-box;
         z-index: 1000;
     }
@@ -156,17 +157,21 @@ nav ul li a:hover {
         display: flex;
     }
     nav ul li {
-        margin: 0.7em auto; /* Increased margin for easier use on mobile */
+        margin: 0.7em 0; /* Increased margin for easier use on mobile */
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 100%;
     }
     nav ul li a {
         font-size: 1.25em; /* Slightly larger font for visibility */
         text-align: center;
         display: block;
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        padding: 0 0.25em; /* Add padding for better usability */
+        margin: 0 auto; /* Center align links */
+        box-sizing: border-box;
+        overflow: hidden; /* Prevent overflow of text */
+        text-overflow: ellipsis;
     }
 }
 
