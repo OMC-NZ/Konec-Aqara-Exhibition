@@ -110,7 +110,6 @@ nav ul li a:hover {
         display: flex;
         margin-right: 1em;
         margin-left: 1em;
-        padding: 0 0.25em 0 0.25em;
     }
     nav ul li a {
         color: #FFFFFF;
@@ -141,17 +140,17 @@ nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 10%;
-        right: 0;
-        width: 30%;
-        height: 40vh;
+        right: 5%;
+        width: 90%;
+        height: auto;
+        max-height: 40vh;
         background-color: rgba(28, 30, 40, 0.95);
         justify-content: center;
         align-items: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
-        padding: auto;
-
-        
+        padding: 1em;
+        overflow-y: auto;
         box-sizing: border-box;
         z-index: 1000;
     }
@@ -159,17 +158,22 @@ nav ul li a:hover {
         display: flex;
     }
     nav ul li {
-        margin: 0.7em auto; /* Increased margin for easier use on mobile */
+        margin: 0.7em 0;
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 100%;
     }
     nav ul li a {
         font-size: 1.25em; /* Slightly larger font for visibility */
         text-align: center;
         display: block;
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        padding: 0.5em; /* Add padding for better usability */
+        margin: 0 auto; /* Center align links */
+        box-sizing: border-box;
+        overflow: hidden; /* Prevent overflow of text */
+        white-space: nowrap; /* Prevent text wrapping */
+        text-overflow: ellipsis;
     }
 }
 
