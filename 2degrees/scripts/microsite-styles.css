@@ -322,12 +322,13 @@ nav ul li a:hover {
         font-size: 2em;
         font-weight: 300;
         margin-left: 10px;
+        padding-bottom: 20px;
         text-align: left;
     }
     .section2-content h2 {
         font-size: 1.5em;
         margin-left: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         font-weight: 200;
         text-align: left;
     }
