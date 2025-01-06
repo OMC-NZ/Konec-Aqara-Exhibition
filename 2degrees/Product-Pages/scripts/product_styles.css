@@ -122,7 +122,7 @@ nav ul li a:hover {
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
     text-align: right;
 }
@@ -130,9 +130,9 @@ nav ul li a:hover {
     #hamburger-menu {
         display: block;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
-        padding-top: 0.75em;
+        transform: translateY(-50%);
         padding-right: 5%;
     }
     nav ul {
@@ -210,7 +210,7 @@ a.buy-now-link {
 /* Section 1 - Home */
 .section1 {
     padding: 0 0 2em 0;
-    padding-top: calc(0em + 30px);
+    padding-top: calc(0em + 20px);
     background-color: #414F47;
     color: #FFFFFF;
 }
@@ -291,7 +291,7 @@ a.buy-now-link {
 @media (max-width: 786px) {
     .section1 {
         padding: 0 0 2em 0;
-        padding-top: calc(1em + 60px);
+        padding-top: calc(1em + 25px);
         background-color: #414F47;
         color: #FFFFFF;
     }
@@ -303,11 +303,12 @@ a.buy-now-link {
     }
     .section1-content .left, .section1-content .right {
         width: 100%;
-        padding: 0 0.25em;
+        padding: 0;
     }
     .section1 h1 {
         font-size: 2em;
-        margin-left: 0.5em;
+        font-weight: 300;
+        margin-left: 10px;
         text-align: left;
     }
     .section1 ul {
@@ -318,12 +319,12 @@ a.buy-now-link {
         margin-left: 0;
         padding-right: 1em;
         text-align: left;
-        width: 95%;
+        width: 100%;
         font-size: 1em;
     }
     .section1-content .right img {
         max-width: 100%;
-        max-height: 200px;
+        max-height: 150px;
         margin: 0 auto;
     }
 /* -- TEST AREA --*/

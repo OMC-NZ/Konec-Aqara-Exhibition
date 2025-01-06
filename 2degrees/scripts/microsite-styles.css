@@ -221,7 +221,7 @@ nav ul li a:hover {
 @media (max-width: 786px) {
     .section1 {
         padding: 0 0 2em 0;
-        padding-top: calc(1em + 20px);
+        padding-top: calc(1em + 25px);
         background-color: #414F47;
         color: #FFFFFF;
     }
