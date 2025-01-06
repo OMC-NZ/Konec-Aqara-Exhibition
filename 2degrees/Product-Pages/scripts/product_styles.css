@@ -499,7 +499,8 @@ a.buy-now-link {
         width: 90%;
         border-collapse: collapse;
         margin: 0 auto 1em auto;
-        overflow-x: auto;
+        overflow: hidden; /* Prevent overflow of text */
+        text-overflow: ellipsis;
     }
 }
 
