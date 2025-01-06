@@ -230,7 +230,7 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
-        width: 90%;
+        width: 100%;
     }
     .section1-content .left, .section1-content .right {
         width: 100%;
@@ -312,7 +312,7 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
-        width: 90%;
+        width: 100%;
     }
     .section2-content .left, .section2-content .right {
         width: 100%;
@@ -335,7 +335,7 @@ nav ul li a:hover {
         font-weight: 400;
         margin: 0 auto 1em auto;
         width: 90%;
-        text-align: justify;
+        text-align: left;
     }
 }
 
@@ -461,10 +461,11 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
-        width: 90%;
+        width: 100%;
     }
     .section3-content .left {
         width: 100%;
+        margin: 0 auto;
         padding: 0 0 2em 0;
     }
     .section3-content .right {
@@ -601,7 +602,7 @@ a.store_button:hover {
         font-size: 0.85em;
         margin: 0 auto;
         width: 90%;
-        text-align: justify;
+        text-align: left;
     }
     .section4-content h2 {
         margin-bottom: 1em;
@@ -760,7 +761,7 @@ a.techsupport_button:hover {
         font-weight: 400;
         margin: 0 auto 1em auto;
         width: 90%;
-        text-align: justify;
+        text-align: left;
     }
 
     .section5-content h2 {
