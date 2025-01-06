@@ -499,8 +499,13 @@ a.buy-now-link {
         width: 90%;
         border-collapse: collapse;
         margin: 0 auto 1em auto;
-        overflow: hidden; /* Prevent overflow of text */
-        text-overflow: ellipsis;
+        white-space: normal;
+    }
+    .section3 table td {
+        border-bottom: 1px solid #b9b2aa;
+        padding: 0.2em;
+        font-size: 1em;
+        font-weight: 400;
     }
 }
 
