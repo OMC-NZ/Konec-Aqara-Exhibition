@@ -584,8 +584,7 @@ a.buy-now-link {
         overflow-x: hidden;
     }
     .section4-content img {
-        max-height: 150px;
-        max-width: 150px;
+        max-width: 100px;
         overflow-x: hidden;
     }
     /* -- TEST AREA --*/
