@@ -311,7 +311,6 @@ a.buy-now-link {
         text-align: left;
     }
     .section1 ul {
-        margin-left: 2em;
         width: 100%;
     }
     .section1 ul li {
@@ -461,7 +460,7 @@ a.buy-now-link {
     .section3-content {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .section3-content h2 {
