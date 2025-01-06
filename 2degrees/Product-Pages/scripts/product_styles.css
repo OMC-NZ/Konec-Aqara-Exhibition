@@ -172,7 +172,6 @@ nav ul li a:hover {
         margin: 0 auto; /* Center align links */
         box-sizing: border-box;
         overflow: hidden; /* Prevent overflow of text */
-        white-space: nowrap; /* Prevent text wrapping */
         text-overflow: ellipsis;
     }
 }
