@@ -771,7 +771,7 @@ a.techsupport_button:hover {
     .section5-content h2 {
         font-size: 1.5em;
         margin-left: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         font-weight: 200;
         text-align: left;
     }
@@ -783,7 +783,6 @@ a.techsupport_button:hover {
         list-style-type: none;
         font-size: 1em;
         font-weight: 400;
-        margin: 0 0 1em 0;
         width: 90%;
         text-align: left;
     }
