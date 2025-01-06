@@ -299,7 +299,7 @@ a.buy-now-link {
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
-        width: 90%;
+        width: 100%;
     }
     .section1-content .left, .section1-content .right {
         width: 100%;
@@ -317,7 +317,7 @@ a.buy-now-link {
     .section1 ul li {
         margin-left: 0;
         padding-right: 1em;
-        text-align: justify;
+        text-align: left;
         width: 95%;
         font-size: 1em;
     }
