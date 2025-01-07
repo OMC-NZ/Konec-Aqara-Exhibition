@@ -412,10 +412,6 @@ nav ul li a:hover {
 }
 
 /* Accordion Styles */
-.accordion {
-    max-width: 100%;
-    margin: 0 auto;
-}
 .accordion-header {
     width: 90%;
     margin: 0 0 0 1.5em;
@@ -458,7 +454,7 @@ nav ul li a:hover {
 }
 @media (max-width: 786px) {
     .section3 {
-        padding: 0;
+        padding: 0 0 2em 0;
         padding-top: calc(1em + 20px);
         background-color: #414F47;
         color: #FFFFFF;
@@ -472,7 +468,7 @@ nav ul li a:hover {
     .section3-content .left {
         width: 100%;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 0 2em 0;
     }
     .section3-content .right {
         width: 100%;
