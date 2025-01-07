@@ -81,7 +81,7 @@ header .logo img {
 }
 @media (max-width: 480px) {
     .logo img {
-        max-height: 25px; /* Further adjust for extra-small screens */
+        max-height: 20px; /* Further adjust for extra-small screens */
     }
 }
 
