@@ -467,7 +467,7 @@ a.buy-now-link {
         width: 100%;
     }
     .section3-content h2 {
-        font-size: 1.5em;
+        font-size: 1.75em;
         margin-left: 10px;
         padding-bottom: 15px;
         font-weight: 300;
@@ -475,9 +475,10 @@ a.buy-now-link {
     }
     .section3-content h3 {
         font-size: 1.25em;
-        font-weight: 200;
+        font-weight: 300;
         color: #414F47;
         margin: 10px;
+        text-align: left;
     }
     .section3-content p {
         font-size: 1em;
@@ -489,6 +490,7 @@ a.buy-now-link {
     .section3-content ul {
         margin-left: 1em;
         width: 100%;
+        padding-left: 10px;
     }
     .section3-content li {
         font-size: 1em;
