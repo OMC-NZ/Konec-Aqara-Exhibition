@@ -658,11 +658,6 @@ a.buy-now-link {
         box-sizing: border-box;
     }
 
-    .section4 .responsive-table td img {
-        width: 100%; /* Maximize image size */
-        height: auto;
-    }
-
     .section4 .responsive-table thead {
         display: none; /* Hide headers on mobile for compact design */
     }
