@@ -590,10 +590,9 @@ a.buy-now-link {
     object-fit: cover;
 }
 
-/* -- TEST AREA --*/
 @media (max-width: 786px) {
     .section4 {
-        padding: 0.5em;
+        padding: 0 0 2em 0;
     }
     .section4-content {
         display: flex;
@@ -715,7 +714,7 @@ a.buy-now-link {
 
 @media (max-width: 786px) {
     .section5 {
-        padding: 0.5em;
+        padding: 0 0 2em 0;
         background-color: #FFFFFF;
         color: #1C1E28;
         width: 100%;
@@ -859,7 +858,7 @@ a.buy-now-link {
 
 @media (max-width: 786px) {
     .section6 {
-        padding: 0.5em;
+        padding: 0 0 2em 0;
         color: #1C1E28;
     }
     .section6-content {
