@@ -381,7 +381,7 @@ a.buy-now-link {
 @media (max-width: 1000px) {
 .section2 {
     padding: 0 0 0 0;
-    background-color: #1C1E28;
+    background-color: #FFFFFF;
     color: #FFFFFF;
     width: 100%;
     margin: 0 auto;
@@ -456,7 +456,7 @@ a.buy-now-link {
 }
 @media (max-width: 786px) {
     .section3 {
-        padding: 0.5em;
+        padding: 0 0 2em 0;
         background-color: #FFFFFF;
         color: #1C1E28;
     }
@@ -468,24 +468,27 @@ a.buy-now-link {
     }
     .section3-content h2 {
         font-size: 1.5em;
-        font-weight: 400;
-        margin: 0.5em 0 0.5em 0.25em;
+        margin-left: 10px;
+        padding-bottom: 15px;
+        font-weight: 300;
+        text-align: left;
     }
     .section3-content h3 {
         font-size: 1.25em;
-        font-weight: 400;
+        font-weight: 200;
         color: #414F47;
-        margin: 0.5em;
+        margin: 10px;
     }
     .section3-content p {
         font-size: 1em;
-        margin: 0 auto;
+        font-weight: 400;
+        margin-left: 10px;
         width: 90%;
         text-align: left;
     }
     .section3-content ul {
-        margin-left: 2em;
-        width: 90%;
+        margin-left: 1em;
+        width: 100%;
     }
     .section3-content li {
         font-size: 1em;
