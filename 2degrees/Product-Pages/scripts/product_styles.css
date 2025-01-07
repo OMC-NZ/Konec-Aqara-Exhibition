@@ -123,6 +123,7 @@ nav ul li a:hover {
 #hamburger-menu {
     display: none;
     font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
     text-align: right;
 }
@@ -130,9 +131,9 @@ nav ul li a:hover {
     #hamburger-menu {
         display: block;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
-        padding-top: 0.75em;
+        transform: translateY(-50%);
         padding-right: 5%;
     }
     nav ul {
