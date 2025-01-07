@@ -533,6 +533,7 @@ a.buy-now-link {
         width: 100%;
         border-collapse: collapse;
         margin: 0 auto 1em auto;
+        padding: 0 10px;
         white-space: normal;
         table-layout: fixed;
     }
