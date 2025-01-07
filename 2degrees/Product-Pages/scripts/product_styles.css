@@ -652,8 +652,9 @@ a.buy-now-link {
     width: 90%;
     text-align: left;
 }
-.section5-content p2 {
-    font-size: 14px;
+
+#action-comment {
+    font-size: 1em;
     margin: 0 auto;
     padding-top: 0.5em;
     width: 90%;
@@ -761,7 +762,6 @@ a.buy-now-link {
     .section5 .responsive-table tr {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 1em;
     }
 
     .section5 .responsive-table th,
