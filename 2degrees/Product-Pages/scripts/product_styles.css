@@ -419,6 +419,12 @@ a.buy-now-link {
     font-weight: 400;
     text-align: left;
 }
+#additional-notes {
+    font-style: italic;
+    margin-top: 0.5em;
+    width: 80%;
+    font-size: 80%;
+}
 .section3-content ul {
     margin-left: 6em;
     width: 75%;
@@ -487,6 +493,13 @@ a.buy-now-link {
         margin-left: 10px;
         width: 90%;
         text-align: left;
+    }
+    #additional-notes {
+        font-style: italic;
+        margin-top: 0.5em;
+        padding-left: 15px;
+        width: 90%;
+        font-size: 80%;
     }
     .section3-content ul {
         margin-left: 1em;
