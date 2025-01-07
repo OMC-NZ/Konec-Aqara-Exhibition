@@ -291,7 +291,7 @@ a.buy-now-link {
 @media (max-width: 786px) {
     .section1 {
         padding: 0 0 2em 0;
-        padding-top: calc(1em + 45px);
+        padding-top: calc(1em + 50px);
         background-color: #414F47;
         color: #FFFFFF;
     }
