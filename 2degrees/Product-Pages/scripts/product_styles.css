@@ -853,6 +853,7 @@ a.buy-now-link {
 .section6-content ul {
     margin-left: 4em;
     width: 75%;
+    list-style: none;
 }
 .section6-content li {
     font-size: 1em;
@@ -893,8 +894,15 @@ a.buy-now-link {
         text-align: left;
     }
     .section6-content ul {
-        margin-left: 2em;
-        width: 90%;
+        margin-left: 1em;
+        width: 100%;
+    }
+    .section6-content ul li {
+        margin-left: 0;
+        padding-right: 1em;
+        text-align: left;
+        width: 100%;
+        font-size: 1em;
     }
 
 }
