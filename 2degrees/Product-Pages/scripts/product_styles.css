@@ -588,25 +588,6 @@ a.buy-now-link {
     max-width: 250px;
     object-fit: cover;
 }
-/* -- TEST AREA --*/
-.section4 .responsive-table table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: auto; /* Variable column widths */
-    margin-top: 2em;
-}
-.section4 .responsive-table th,
-.section4 .responsive-table td {
-    border: 0;
-    text-align: center;
-    padding-top: 8px;
-    width: 17% ;
-    vertical-align: top;
-}
-.section4 .responsive-table td p {
-    font-size: smaller;
-    padding: 0.5em;
-}
 
 /* -- TEST AREA --*/
 @media (max-width: 786px) {
