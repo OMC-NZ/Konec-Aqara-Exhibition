@@ -573,12 +573,12 @@ a.buy-now-link {
     margin-left: 1.5em;
 }
 .section4-content table {
-    width: 80%;
+    width: 70%;
     border-collapse: collapse;
     margin: 0 auto;
 }
 .section4-content td {
-    width: 30%;
+    width: 33.3%;
     text-align: center;
     font-weight: 400;
     vertical-align: middle;
@@ -616,36 +616,8 @@ a.buy-now-link {
         max-height: 100px;
         overflow-x: hidden;
     }
-    /* -- TEST AREA --*/
-    .section4 .responsive-table table,
-    .section4 .responsive-table thead,
-    .section4 .responsive-table tbody,
-    .section4 .responsive-table th,
-    .section4 .responsive-table td,
-    .section4 .responsive-table tr {
-        display: block;
-        width: 100%;
-    }
 
-    .section4 .responsive-table tr {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-    }
-
-    .section4 .responsive-table th,
-    .section4 .responsive-table td {
-        width: calc(50% - 1px); /* 2 columns */
-        box-sizing: border-box;
-    }
-
-    .section4 .responsive-table thead {
-        display: none; /* Hide headers on mobile for compact design */
-    }
-}
-
-/* -- TEST AREA --*/   
-/* Section 5 - Automations */
+    /* Section 5 - Automations */
 .section5 {
     scroll-margin-top: 85px;
     padding: 2em;
