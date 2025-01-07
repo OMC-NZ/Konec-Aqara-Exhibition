@@ -481,7 +481,8 @@ a.buy-now-link {
     .section3-content h2 {
         font-size: 1.75em;
         margin-left: 10px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-weight: 300;
         text-align: left;
     }
@@ -604,7 +605,8 @@ a.buy-now-link {
     .section4-content h2 {
         font-size: 1.75em;
         margin-left: 10px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-weight: 300;
         text-align: left;
     }
@@ -645,6 +647,7 @@ a.buy-now-link {
     color: #414F47;
     margin-top: 1em;
     margin-left: 2.5em;
+    
 }
 .section5-content p {
     font-size: 1em;
@@ -729,7 +732,8 @@ a.buy-now-link {
     .section5-content h2 {
         font-size: 1.75em;
         margin-left: 10px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-weight: 300;
         text-align: left;
     }
@@ -748,7 +752,7 @@ a.buy-now-link {
         text-align: left;
     }
     #action-comment {
-        font-size: 0.75em;
+        font-size: 1em;
         margin-left: 10px;
         text-align: left;
         font-style: italic;
@@ -870,7 +874,8 @@ a.buy-now-link {
     .section6-content h2 {
         font-size: 1.75em;
         margin-left: 10px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-weight: 300;
         text-align: left;
     }
