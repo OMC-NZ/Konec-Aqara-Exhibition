@@ -412,6 +412,9 @@ nav ul li a:hover {
 }
 
 /* Accordion Styles */
+.accordion {
+    margin: 0 auto;
+}
 .accordion-header {
     width: 90%;
     margin: 0 0 0 1.5em;
