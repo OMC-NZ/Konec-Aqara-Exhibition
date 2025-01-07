@@ -461,10 +461,10 @@ a.buy-now-link {
         color: #1C1E28;
     }
     .section3-content {
-        display: flex;
         flex-direction: column;
+        text-align: center;
+        overflow-x: hidden;
         width: 100%;
-        margin: 0 auto;
     }
     .section3-content h2 {
         font-size: 1.5em;
