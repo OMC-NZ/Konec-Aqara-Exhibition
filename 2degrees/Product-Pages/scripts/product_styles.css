@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C600%7CSource%20Sans%20Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap');
 
 body, html {
-    overflow-x: hidden; /* Keep overflow-x hidden for the entire page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 * {
@@ -12,12 +15,11 @@ body, html {
     box-sizing: border-box;
     max-width: 100%;
 }
+
 body {
     background-color: #1C1E28;
     font-family: 'Source Sans Pro', Arial, sans-serif;
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,21 +27,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 100%; /* Allow the container to expand fully */
+    max-width: 100%; /* Ensure the container can expand fully */
     margin: 0 auto;
-    overflow-x: visible; /* Allow overflow in the header section */
-}
-
-@media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden; /* Keep horizontal overflow hidden for small screens */
-    }
-    .container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        overflow-x: visible; /* Allow the container to expand on small screens */
-    }  
 }
 
 /* --------------- HEADER --------------- */
@@ -58,11 +47,17 @@ header {
     box-sizing: border-box;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    header {
-        left: 0;
-        right: 0;
+    html, body {
+        overflow-x: visible; /* Allow overflow-x on mobile */
+    }
+    .container {
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }  
+    header {
         padding-left: 0.25em;
         padding-right: 0.25em;
     }
@@ -82,15 +77,16 @@ header .logo img {
     width: auto;
     display: block;
 }
+
 @media (max-width: 768px) {
     .logo img {
         max-height: 30px; /* Adjust for smaller screens */
         height: auto;
         width: auto;
         display: block;
-        
     }
 }
+
 @media (max-width: 480px) {
     .logo img {
         max-height: 25px; /* Further adjust for extra-small screens */
@@ -115,6 +111,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #BE3D26;
 }
+
 @media (max-width: 1600px) {
     nav ul {
         list-style: none;
@@ -131,6 +128,7 @@ nav ul li a:hover {
         margin-right: 1em;
     }
 }
+
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
@@ -216,7 +214,6 @@ a.buy-now-link {
         margin-right: 20%;
     }
 }
-
 
 /* --------------- BODY CONTENT --------------- */
 /* Section 1 - Home */
