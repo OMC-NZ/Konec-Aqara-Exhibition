@@ -863,6 +863,9 @@ a.buy-now-link {
     color: #FFFFFF;
     text-align: left;
 }
+.section6-content ul li br {
+    display: none;
+}
 .section6-content a {
     color: #B9B2AA;
     font-weight: 400;
@@ -905,6 +908,9 @@ a.buy-now-link {
         width: 100%;
         font-size: 1em;
     }
+    .section6-content ul li br {
+        display: inline;
+    }
     .section6-content a {
         color: #B9B2AA;
         font-weight: 400;
@@ -940,6 +946,9 @@ a.buy-now-link {
     text-align: center;
 }
 @media (max-width: 786px) {
+    .section7 {
+        padding: 1em;
+    }
     .section7-content h1 {
         font-size: 2em;
         font-weight: 300;
