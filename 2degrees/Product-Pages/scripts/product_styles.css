@@ -72,7 +72,7 @@ header .logo img {
 }
 @media (max-width: 768px) {
     .logo img {
-        height: 25px; /* Adjust for smaller screens */
+        height: 15px; /* Adjust for smaller screens */
     }
 }
 @media (max-width: 480px) {
