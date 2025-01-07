@@ -583,7 +583,11 @@ a.buy-now-link {
     font-weight: 400;
     vertical-align: middle;
 }
-
+.section4-content img {
+    max-height: 220px;
+    max-width: 250px;
+    object-fit: cover;
+}
 /* -- TEST AREA --*/
 .section4 .responsive-table table {
     width: 100%;
