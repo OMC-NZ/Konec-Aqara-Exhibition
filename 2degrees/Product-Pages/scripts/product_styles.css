@@ -50,7 +50,7 @@ header {
     header {
         left: 0;
         right: 0;
-        width: 100%;
+        max-width: 100%;
         padding-left: 0.25em;
         padding-right: 0.25em;
     }
