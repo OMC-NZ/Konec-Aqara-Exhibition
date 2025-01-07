@@ -692,7 +692,7 @@ a.buy-now-link {
 }
 .section5 .responsive-table td img {
     max-height: 100px;
-    width: auto;
+    max-width: 100px;
 }
 .section5 .responsive-table td p {
     font-size: 1em;
@@ -794,8 +794,6 @@ a.buy-now-link {
     .section5 .responsive-table td img {
         max-height: 80px;
         max-width: 80px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-
     }
 
     .section5 .responsive-table thead {
