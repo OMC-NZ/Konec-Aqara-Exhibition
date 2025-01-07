@@ -795,6 +795,8 @@ a.buy-now-link {
         text-align: left;
         font-style: italic;
         font-size: 1em;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     /* For subsequent rows, make them 2 columns per row */
