@@ -411,7 +411,8 @@ a.buy-now-link {
     font-size: 1.5em;
     font-weight: 400;
     color: #414F47;
-    margin: 1em 2.5em;
+    margin-top: 1em;
+    margin-left: 2.5em;
 }
 .section3-content p {
     margin: 0 4em;
@@ -643,7 +644,8 @@ a.buy-now-link {
     font-size: 1.5em;
     font-weight: 400;
     color: #414F47;
-    margin: 1em 2.5em;
+    margin-top: 1em;
+    margin-left: 2.5em;
 }
 .section5-content p {
     font-size: 1em;
