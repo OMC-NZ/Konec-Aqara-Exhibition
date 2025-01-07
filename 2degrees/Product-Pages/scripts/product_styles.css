@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C600%7CSource%20Sans%20Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap');
 
 body, html {
-    overflow-x: hidden;
+    overflow-x: hidden; /* Keep overflow-x hidden for the entire page */
 }
 
 * {
@@ -22,20 +22,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .container {
     width: 100%;
-    max-width: auto;
+    max-width: 100%; /* Allow the container to expand fully */
     margin: 0 auto;
+    overflow-x: visible; /* Allow overflow in the header section */
 }
 
 @media (max-width: 768px) {
     html, body {
-        overflow-x: hidden;
+        overflow-x: hidden; /* Keep horizontal overflow hidden for small screens */
     }
     .container {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
+        overflow-x: visible; /* Allow the container to expand on small screens */
     }  
 }
 
@@ -43,8 +46,8 @@ body {
 header {
     position: sticky;
     top: 0;
-    left: 18.5%;
-    right: 18.5%;
+    left: 0; /* Ensure the header spans the full width */
+    right: 0;
     width: 100%;
     background-color: #1C1E28;
     display: flex;
@@ -52,6 +55,7 @@ header {
     align-items: center;
     padding: 1em 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
