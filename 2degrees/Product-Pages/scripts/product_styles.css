@@ -62,7 +62,7 @@ header .logo {
     align-items: center;
     justify-content: space-between;
     max-height: 40px;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 header .logo img {
     max-height: 40px;
@@ -72,12 +72,12 @@ header .logo img {
 }
 @media (max-width: 768px) {
     .logo img {
-        height: 15px; /* Adjust for smaller screens */
+        max-height: 30px; /* Adjust for smaller screens */
     }
 }
 @media (max-width: 480px) {
     .logo img {
-        max-height: 20px; /* Further adjust for extra-small screens */
+        max-height: 25px; /* Further adjust for extra-small screens */
     }
 }
 
@@ -288,7 +288,7 @@ a.buy-now-link {
 @media (max-width: 786px) {
     .section1 {
         padding: 0 0 2em 0;
-        padding-top: calc(1em + 40px);
+        padding-top: calc(1em + 50px);
         background-color: #414F47;
         color: #FFFFFF;
     }
@@ -300,11 +300,12 @@ a.buy-now-link {
     }
     .section1-content .left, .section1-content .right {
         width: 100%;
-        padding: 0 0.25em;
+        padding: 0;
     }
     .section1 h1 {
         font-size: 2em;
-        margin-left: 0.5em;
+        font-weight: 300;
+        margin-left: 10px;
         text-align: left;
     }
     .section1 ul {
