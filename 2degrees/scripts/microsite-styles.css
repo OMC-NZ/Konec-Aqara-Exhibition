@@ -287,12 +287,12 @@ nav ul li a:hover {
 .section2-content h1{
     margin: 0 0 0 1em;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2rem;
 }
 .section2-content h2{
     margin: 0.25em 0 0 1.5em;
     font-weight: 200;
-    font-size: 2em;
+    font-size: 1.5rem;
     color: #DFD2B0;
 }
 .section2-content .right img {
@@ -303,7 +303,7 @@ nav ul li a:hover {
 .section2-content p {
     margin: 0 4em;
     text-align: justify;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 300;
     padding: 0.25em 0 1em 0;
 }
@@ -325,21 +325,21 @@ nav ul li a:hover {
         padding: 0;
     }
     .section2-content h1 {
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: 300;
         margin-left: 10px;
         padding-bottom: 20px;
         text-align: left;
     }
     .section2-content h2 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin-left: 10px;
         padding-bottom: 15px;
         font-weight: 200;
         text-align: left;
     }
     .section2-content p {
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 400;
         margin-left: 10px;
         width: 90%;
