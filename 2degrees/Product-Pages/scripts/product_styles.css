@@ -122,7 +122,7 @@ nav ul li a:hover {
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
     text-align: right;
 }
@@ -130,9 +130,9 @@ nav ul li a:hover {
     #hamburger-menu {
         display: block;
         position: absolute;
-        top: 50%;
+        top: 0;
         right: 0;
-        transform: translateY(-50%);
+        padding-top: 0.75em;
         padding-right: 5%;
     }
     nav ul {
@@ -210,7 +210,7 @@ a.buy-now-link {
 /* Section 1 - Home */
 .section1 {
     padding: 0 0 2em 0;
-    padding-top: calc(0em + 20px);
+    padding-top: calc(0em + 30px);
     background-color: #414F47;
     color: #FFFFFF;
 }
@@ -303,29 +303,27 @@ a.buy-now-link {
     }
     .section1-content .left, .section1-content .right {
         width: 100%;
-        padding: 0;
+        padding: 0 0.25em;
     }
     .section1 h1 {
         font-size: 2em;
-        font-weight: 300;
-        margin-left: 10px;
+        margin-left: 0.5em;
         text-align: left;
     }
     .section1 ul {
         margin-left: 1em;
         width: 100%;
-        padding-right: 10px;
     }
     .section1 ul li {
         margin-left: 0;
         padding-right: 1em;
         text-align: left;
-        width: 100%;
+        width: 95%;
         font-size: 1em;
     }
     .section1-content .right img {
         max-width: 100%;
-        max-height: 150px;
+        max-height: 200px;
         margin: 0 auto;
     }
 /* -- TEST AREA --*/
@@ -337,7 +335,6 @@ a.buy-now-link {
     .section1 .responsive-table tr {
         display: block;
         width: 100%;
-        margin: 0 auto;
     }
 
     .section1 .responsive-table tr {
@@ -382,7 +379,7 @@ a.buy-now-link {
 @media (max-width: 1000px) {
 .section2 {
     padding: 0 0 0 0;
-    background-color: #FFFFFF;
+    background-color: #1C1E28;
     color: #FFFFFF;
     width: 100%;
     margin: 0 auto;
@@ -412,8 +409,7 @@ a.buy-now-link {
     font-size: 1.5em;
     font-weight: 400;
     color: #414F47;
-    margin-top: 1em;
-    margin-left: 2.5em;
+    margin: 1em 2.5em;
 }
 .section3-content p {
     margin: 0 4em;
@@ -421,21 +417,9 @@ a.buy-now-link {
     font-weight: 400;
     text-align: left;
 }
-#additional-notes {
-    font-style: italic;
-    margin-top: 0.5em;
-    width: 80%;
-    font-size: 80%;
-}
-#table-sectiontitle {
-    font-weight: bold;
-    padding-top: 1em;
-    margin: 0 4em;
-}
 .section3-content ul {
     margin-left: 6em;
     width: 75%;
-    list-style: none;
 }
 .section3-content li {
     font-size: 1em;
@@ -452,7 +436,7 @@ a.buy-now-link {
 .section3 table {
     width: 70%;
     border-collapse: collapse;
-    margin: 0 4em;
+    margin: 0 auto;
     overflow-x: auto;
 }
 .section3 table td {
@@ -465,59 +449,41 @@ a.buy-now-link {
     width: 25%;
     padding-left: 0.5em;
     font-size: 1em;
-    color: #414F47;
+    font-weight: 500;
+    color: #1C1E28;
 }
 @media (max-width: 786px) {
     .section3 {
-        padding: 0 0 2em 0;
+        padding: 0.5em;
         background-color: #FFFFFF;
         color: #1C1E28;
     }
     .section3-content {
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        overflow-x: hidden;
         width: 100%;
+        margin: 0 auto;
     }
     .section3-content h2 {
-        font-size: 1.75em;
-        margin-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 300;
-        text-align: left;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0.5em 0 0.5em 0.25em;
     }
     .section3-content h3 {
         font-size: 1.25em;
-        font-weight: 300;
+        font-weight: 400;
         color: #414F47;
-        margin: 10px;
-        text-align: left;
+        margin: 0.5em;
     }
     .section3-content p {
         font-size: 1em;
-        font-weight: 400;
-        margin-left: 10px;
+        margin: 0 auto;
         width: 90%;
         text-align: left;
     }
-    #additional-notes {
-        font-style: italic;
-        margin-top: 0.5em;
-        padding-left: 15px;
-        width: 90%;
-        font-size: 80%;
-    }
-    #table-sectiontitle {
-        font-weight: bold;
-        padding-top: 5px;
-        padding-left: 15px;
-        margin: 0;
-    }
     .section3-content ul {
-        margin-left: 1em;
-        width: 100%;
-        padding-right: 20px;
+        margin-left: 2em;
+        width: 90%;
     }
     .section3-content li {
         font-size: 1em;
@@ -530,10 +496,9 @@ a.buy-now-link {
         color: #BE3D26;
     }
     .section3 table {
-        width: 100%;
+        width: 90%;
         border-collapse: collapse;
         margin: 0 auto 1em auto;
-        padding: 0 10px;
         white-space: normal;
         table-layout: fixed;
     }
@@ -543,15 +508,8 @@ a.buy-now-link {
         font-size: 1em;
         font-weight: 400;
         white-space: normal;
-        word-wrap: normal;
-        overflow-wrap: normal;
-        text-align: left;
-    }
-    .section3 table tr td:first-child {
-        width: 35%;
-        padding-left: 10px;
-        font-size: 1em;
-        color: #414F47;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
 
@@ -577,12 +535,12 @@ a.buy-now-link {
     margin-left: 1.5em;
 }
 .section4-content table {
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
 }
 .section4-content td {
-    width: 33.3%;
+    width: 30%;
     text-align: center;
     font-weight: 400;
     vertical-align: middle;
@@ -592,25 +550,46 @@ a.buy-now-link {
     max-width: 250px;
     object-fit: cover;
 }
+/* -- TEST AREA --*/
+.section4 .responsive-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Variable column widths */
+    margin-top: 2em;
+}
+.section4 .responsive-table th,
+.section4 .responsive-table td {
+    border: 0;
+    text-align: center;
+    padding-top: 8px;
+    width: 17% ;
+    vertical-align: top;
+}
+.section4 .responsive-table td img {
+    max-width: 50px;
+    height: auto;
+}
+.section4 .responsive-table td p {
+    font-size: smaller;
+    padding: 0.5em;
+}
 
+/* -- TEST AREA --*/
 @media (max-width: 786px) {
     .section4 {
-        padding: 0 0 2em 0;
+        padding: 0.5em;
     }
     .section4-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     .section4-content h2 {
-        font-size: 1.75em;
-        margin-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 300;
-        text-align: left;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0.5em 0 0.5em 0.25em;
     }
     .section4-content table {
         width: 100%;
@@ -619,12 +598,44 @@ a.buy-now-link {
         overflow-x: hidden;
     }
     .section4-content img {
-        max-height: 100px;
+        max-width: 100px;
         overflow-x: hidden;
+    }
+    /* -- TEST AREA --*/
+    .section4 .responsive-table table,
+    .section4 .responsive-table thead,
+    .section4 .responsive-table tbody,
+    .section4 .responsive-table th,
+    .section4 .responsive-table td,
+    .section4 .responsive-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .section4 .responsive-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .section4 .responsive-table th,
+    .section4 .responsive-table td {
+        width: calc(50% - 1px); /* 2 columns */
+        box-sizing: border-box;
+    }
+
+    .section4 .responsive-table td img {
+        width: 100%; /* Maximize image size */
+        height: auto;
+    }
+
+    .section4 .responsive-table thead {
+        display: none; /* Hide headers on mobile for compact design */
     }
 }
 
-    /* Section 5 - Automations */
+/* -- TEST AREA --*/   
+/* Section 5 - Automations */
 .section5 {
     scroll-margin-top: 85px;
     padding: 2em;
@@ -647,9 +658,7 @@ a.buy-now-link {
     font-size: 1.5em;
     font-weight: 400;
     color: #414F47;
-    margin-top: 1em;
-    margin-left: 2.5em;
-    
+    margin: 1em 2.5em;
 }
 .section5-content p {
     font-size: 1em;
@@ -658,11 +667,12 @@ a.buy-now-link {
     width: 90%;
     text-align: left;
 }
-#action-comment {
-    font-size: 1em;
+.section5-content p2 {
+    font-size: 14px;
     margin: 0 auto;
     padding-top: 0.5em;
-    text-align: left;
+    width: 90%;
+    text-align: justify;
     font-style: italic;
     font-weight: 400;
     color: #BE3D26;
@@ -679,6 +689,8 @@ a.buy-now-link {
 .section5-content a:hover img {
     opacity: 0.8;
 }
+
+/* -- TEST AREA --*/
 .section5 .responsive-table table {
     width: 100%;
     border-collapse: collapse;
@@ -697,7 +709,7 @@ a.buy-now-link {
 }
 .section5 .responsive-table td img {
     max-height: 100px;
-    max-width: 100px;
+    width: auto;
 }
 .section5 .responsive-table td p {
     font-size: 1em;
@@ -717,9 +729,10 @@ a.buy-now-link {
     width: 15%;
 }
 
+/* -- TEST AREA --*/
 @media (max-width: 786px) {
     .section5 {
-        padding: 0 0 2em 0;
+        padding: 0.5em;
         background-color: #FFFFFF;
         color: #1C1E28;
         width: 100%;
@@ -732,36 +745,24 @@ a.buy-now-link {
         margin: 0 auto;
     }
     .section5-content h2 {
-        font-size: 1.75em;
-        margin-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 300;
-        text-align: left;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0.5em 0 0.5em 0.25em;
     }
     .section5-content h3 {
         font-size: 1.25em;
-        font-weight: 300;
+        font-weight: 400;
         color: #414F47;
-        margin: 10px;
-        text-align: left;
+        margin: 1em;
     }
     .section5-content p {
         font-size: 1em;
-        font-weight: 400;
-        margin-left: 10px;
+        margin: 0 auto;
         width: 90%;
         text-align: left;
     }
-    #action-comment {
-        font-size: 1em;
-        margin-left: 10px;
-        text-align: left;
-        font-style: italic;
-        font-weight: 300;
-        color: #BE3D26;
-    }
 
+    /* -- TEST AREA --*/
     .section5 .responsive-table table,
     .section5 .responsive-table thead,
     .section5 .responsive-table tbody,
@@ -775,6 +776,7 @@ a.buy-now-link {
     .section5 .responsive-table tr {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1em;
     }
 
     .section5 .responsive-table th,
@@ -794,11 +796,10 @@ a.buy-now-link {
     /* Column 1 on its own row */
     .section5 .responsive-table td:first-child {
         width: 100%; /* Column 1 occupies full width */
+        padding-left: 1em;
         text-align: left;
         font-style: italic;
         font-size: 1em;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 
     /* For subsequent rows, make them 2 columns per row */
@@ -807,8 +808,8 @@ a.buy-now-link {
     }
 
     .section5 .responsive-table td img {
-        max-height: 80px;
-        max-width: 80px;
+        max-width: 90%;
+        height: auto;
     }
 
     .section5 .responsive-table thead {
@@ -819,17 +820,7 @@ a.buy-now-link {
     .section5 .responsive-table td:not(:first-child) {
         width: 50%; /* Make all non-first columns 50% */
     }
-    .section5 .responsive-table td:empty {
-        min-height: 0; /* Reduce the height to the minimum necessary */
-        padding: 0; /* Remove padding to shrink the cell */
-        font-size: 0; /* Ensures &nbsp; does not contribute to size */
-    }
-    
-    .section5 .responsive-table td:empty::before {
-        content: ""; /* Optional: Prevent visual collapse if necessary */
-        display: block;
-        height: 1px; /* Maintain table structure */
-    }
+    /* -- TEST AREA --*/
 }
 
 /* Section 6 - Support */
@@ -855,7 +846,6 @@ a.buy-now-link {
 .section6-content ul {
     margin-left: 4em;
     width: 75%;
-    list-style: none;
 }
 .section6-content li {
     font-size: 1em;
@@ -865,16 +855,12 @@ a.buy-now-link {
     color: #FFFFFF;
     text-align: left;
 }
-.section6-content ul li br {
-    display: none;
-}
 .section6-content a {
     color: #B9B2AA;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s;
-    padding-left: 15px;
 }
 .section6-content a:hover {
     color: #BE3D26;
@@ -882,7 +868,7 @@ a.buy-now-link {
 
 @media (max-width: 786px) {
     .section6 {
-        padding: 0 0 2em 0;
+        padding: 0.5em;
         color: #1C1E28;
     }
     .section6-content {
@@ -892,34 +878,13 @@ a.buy-now-link {
         margin: 0 auto;
     }
     .section6-content h2 {
-        font-size: 1.75em;
-        margin-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 300;
-        text-align: left;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 0.5em 0 0.5em 0.25em;
     }
     .section6-content ul {
-        margin-left: 1em;
-        width: 100%;
-    }
-    .section6-content ul li {
-        margin-left: 0;
-        padding-right: 1em;
-        text-align: left;
-        width: 100%;
-        font-size: 1em;
-    }
-    .section6-content ul li br {
-        display: inline;
-    }
-    .section6-content a {
-        color: #B9B2AA;
-        font-weight: 400;
-        text-decoration: none;
-        display: inline-block;
-        transition: color 0.3s;
-        padding-left: 5px;
+        margin-left: 2em;
+        width: 90%;
     }
 
 }
@@ -948,9 +913,6 @@ a.buy-now-link {
     text-align: center;
 }
 @media (max-width: 786px) {
-    .section7 {
-        padding: 1em;
-    }
     .section7-content h1 {
         font-size: 2em;
         font-weight: 300;
