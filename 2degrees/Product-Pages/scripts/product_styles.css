@@ -817,6 +817,17 @@ a.buy-now-link {
     .section5 .responsive-table td:not(:first-child) {
         width: 50%; /* Make all non-first columns 50% */
     }
+    .section5 .responsive-table td:empty {
+        min-height: 0; /* Reduce the height to the minimum necessary */
+        padding: 0; /* Remove padding to shrink the cell */
+        font-size: 0; /* Ensures &nbsp; does not contribute to size */
+    }
+    
+    .section5 .responsive-table td:empty::before {
+        content: ""; /* Optional: Prevent visual collapse if necessary */
+        display: block;
+        height: 1px; /* Maintain table structure */
+    }
 }
 
 /* Section 6 - Support */
