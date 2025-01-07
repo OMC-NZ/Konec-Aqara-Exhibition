@@ -869,6 +869,7 @@ a.buy-now-link {
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s;
+    padding-left: 5px;
 }
 .section6-content a:hover {
     color: #BE3D26;
