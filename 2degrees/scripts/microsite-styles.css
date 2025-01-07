@@ -735,7 +735,7 @@ a.techsupport_button:hover {
     margin: auto;
     font-size: 0.85em;
     text-align: center;
-    width: 80%;
+    max-width: 80%;
 }
 
 @media (max-width: 786px) {
