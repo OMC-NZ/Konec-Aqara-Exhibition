@@ -603,10 +603,6 @@ a.buy-now-link {
     width: 17% ;
     vertical-align: top;
 }
-.section4 .responsive-table td img {
-    max-width: 100px;
-    height: auto;
-}
 .section4 .responsive-table td p {
     font-size: smaller;
     padding: 0.5em;
