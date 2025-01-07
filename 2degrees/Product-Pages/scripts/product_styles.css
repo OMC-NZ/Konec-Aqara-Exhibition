@@ -314,6 +314,7 @@ a.buy-now-link {
     .section1 ul {
         margin-left: 1em;
         width: 100%;
+        padding-right: 10px;
     }
     .section1 ul li {
         margin-left: 0;
