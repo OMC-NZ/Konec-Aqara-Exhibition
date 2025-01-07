@@ -533,6 +533,13 @@ a.buy-now-link {
         overflow-wrap: normal;
         text-align: left;
     }
+    .section3 table tr td:first-child {
+        width: 30%;
+        padding-left: 10px;
+        font-size: 1em;
+        font-weight: 500;
+        color: #1C1E28;
+    }
 }
 
 /* Section 4 - Product Images */
