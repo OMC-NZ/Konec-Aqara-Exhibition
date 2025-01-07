@@ -377,7 +377,7 @@ nav ul li a:hover {
 .section3-content h1{
     margin: 0 0 0 1em;
     font-weight: 400;
-    font-size: 1.75rem;
+    font-size: 3em;
 }
 .section3-content h2{
     margin: 0.25em 0 0.25em 1.5em;
@@ -405,6 +405,7 @@ nav ul li a:hover {
 }
 .section3-content a {
     color: #FFFFFF;
+    font-size: 1rem;
     text-decoration: none;
     transition: color 0.3s;
 }
