@@ -793,6 +793,9 @@ a.buy-now-link {
 
     .section5 .responsive-table td img {
         max-height: 80px;
+        max-width: 80px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
     }
 
     .section5 .responsive-table thead {
