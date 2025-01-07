@@ -96,7 +96,7 @@ nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     margin-right: 1.5em;
 }
@@ -115,14 +115,14 @@ nav ul li a:hover {
         color: #FFFFFF;
         text-decoration: none;
         transition: color 0.3s;
-        font-size: 2em;
+        font-size: 1.5em;
         margin-right: 1em;
     }
 }
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
     text-align: right;
 }
