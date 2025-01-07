@@ -422,6 +422,7 @@ a.buy-now-link {
 .section3-content ul {
     margin-left: 6em;
     width: 75%;
+    list-style: none;
 }
 .section3-content li {
     font-size: 1em;
