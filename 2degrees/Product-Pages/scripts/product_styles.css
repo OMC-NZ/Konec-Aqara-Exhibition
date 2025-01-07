@@ -748,7 +748,6 @@ a.buy-now-link {
         text-align: left;
     }
 
-    /* -- TEST AREA --*/
     .section5 .responsive-table table,
     .section5 .responsive-table thead,
     .section5 .responsive-table tbody,
@@ -782,7 +781,6 @@ a.buy-now-link {
     /* Column 1 on its own row */
     .section5 .responsive-table td:first-child {
         width: 100%; /* Column 1 occupies full width */
-        padding-left: 1em;
         text-align: left;
         font-style: italic;
         font-size: 1em;
@@ -794,7 +792,7 @@ a.buy-now-link {
     }
 
     .section5 .responsive-table td img {
-        max-height: 80%;
+        max-height: 80px;
     }
 
     .section5 .responsive-table thead {
@@ -805,7 +803,6 @@ a.buy-now-link {
     .section5 .responsive-table td:not(:first-child) {
         width: 50%; /* Make all non-first columns 50% */
     }
-    /* -- TEST AREA --*/
 }
 
 /* Section 6 - Support */
