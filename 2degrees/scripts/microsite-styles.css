@@ -7,6 +7,9 @@
     box-sizing: border-box;
     max-width: 100%;
 }
+html {
+    font-size: 16px; /* 1rem = 16px */
+  }
 body {
     background-color: #1C1E28;
     font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -23,6 +26,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 14px; /* 1rem = 14px */
+      }
     .container {
         width: 100%;
         margin: 0 auto;
@@ -94,7 +100,7 @@ nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 300;
     margin-right: 1.5em;
 }
@@ -113,14 +119,14 @@ nav ul li a:hover {
         color: #FFFFFF;
         text-decoration: none;
         transition: color 0.3s;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         margin-right: 1em;
     }
 }
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     cursor: pointer;
     text-align: right;
 }
@@ -161,7 +167,7 @@ nav ul li a:hover {
         width: 100%;
     }
     nav ul li a {
-        font-size: 1.25em; /* Slightly larger font for visibility */
+        font-size: 1.25rem; /* Slightly larger font for visibility */
         text-align: center;
         display: block;
         width: 90%;
@@ -205,7 +211,7 @@ nav ul li a:hover {
 .section1-content h1{
     margin: 0 0 0 1em;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2rem;
 }
 .section1-content h2{
     margin: 0.25em 0 0 1.5em;
@@ -391,7 +397,7 @@ nav ul li a:hover {
 }
 .section3-content p {
     margin: 0 4em;
-    text-align: justify;
+    text-align: left;
     font-size: 1em;
     font-weight: 300;
     color: #DFD2B0;
@@ -487,10 +493,10 @@ nav ul li a:hover {
         text-align: left;
     }
     .section3-content p {
-        font-size: 0.85em;
+        font-size: 1em;
         margin: 0 auto;
         width: 90%;
-        text-align: justify;
+        text-align: left;
     }
     .section3-content ul {
         width: auto;
@@ -772,6 +778,7 @@ a.techsupport_button:hover {
     .section5-content h2 {
         font-size: 1.5em;
         margin-left: 10px;
+        margin-right: 20px;
         padding-bottom: 15px;
         font-weight: 200;
         text-align: left;
