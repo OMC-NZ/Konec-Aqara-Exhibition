@@ -729,13 +729,14 @@ a.techsupport_button:hover {
 }
 .section5-content .warranty {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     padding: 0.5em 0.5em;
     margin: auto;
     font-size: 0.85em;
     text-align: center;
     max-width: 80%;
+    gap: 0.25em;
 }
 
 @media (max-width: 786px) {
