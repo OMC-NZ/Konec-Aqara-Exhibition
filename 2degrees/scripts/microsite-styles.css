@@ -196,9 +196,8 @@ nav ul li a:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         z-index: 1000;
     }
-
-    /* The menu is displayed when 'show' class is added */
     nav ul.show {
+        opacity: 1;
         display: flex; /* Flex for visibility */
     }
 
@@ -550,7 +549,7 @@ nav ul li a:hover {
     }
     .section3-content h1 {
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 300;
         padding-top: 30px;
         margin: 0 0 0 10px;
         text-align: left;
@@ -572,10 +571,13 @@ nav ul li a:hover {
         margin-left: 20px;
     }
     .section3-content li {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding-bottom: 0.75em;
         text-align: left;
         list-style-type: none;
+    }
+    .accordion-content {
+        padding-left: 0;
     }
 }
 
@@ -682,31 +684,31 @@ a.store_button:hover {
         text-align: left;
     }
     .section4-content p {
-        font-size: 1em;
-        font-weight: 400;
+        font-size: 1.25em;
+        font-weight: 300;
         margin-left: 10px;
         width: 90%;
         text-align: left;
     }
     .section4-content h2 {
-        font-size: 1.5em;
+        font-size: 1.75rem;
         margin-left: 10px;
         padding-bottom: 30px;
         font-weight: 200;
         text-align: left;
     }
     .section4-content .store_button {
-        display: block;
+        display: inline-block;
         text-align: center;
         background-color: #414F47;
         padding: 0.5em 0.5em;
-        font-size: 1em;
-        font-weight: 400;
+        font-size: 1.2em;
+        font-weight: 300;
         margin: 1em auto 2em auto;
         border: none;
         border-radius: 5px;
-        width: 60%;
-        align-self: center;
+        white-space: nowrap;
+        max-width: fit-content;
     }
 }
 
@@ -759,10 +761,6 @@ a.store_button:hover {
     margin-left: 60px;
     margin-top: 15px;
     width: 90%;
-}
-.section5-content ol {
-    margin-left: 5em;
-    width: 85%;
 }
 .section5-content li {
     font-size: 1.2rem;
@@ -846,49 +844,52 @@ a.techsupport_button:hover {
         padding: 0;
     }
     .section5-content h1 {
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: 300;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
+        padding: 0 0 0 0;
         text-align: left;
     }
     .section5-content p {
-        font-size: 1em;
-        font-weight: 400;
-        margin-left: 10px;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 0 0 10px 10px;
+        padding: 0;
         width: 90%;
         text-align: left;
     }
     .section5-content h2 {
-        font-size: 1.5em;
-        margin-left: 10px;
-        margin-right: 20px;
-        padding-bottom: 15px;
+        font-size: 1.75rem;
         font-weight: 200;
         text-align: left;
+        margin: 20px 0 0 10px;
+        padding: 0 0 15px 0;
     }
     .section5-content ul {
-        margin-left: 15px;
+        margin: 0 0 0 10px;
         width: 100%;
     }
     .section5-content li {
         list-style-type: none;
-        font-size: 1em;
-        font-weight: 400;
+        font-size: 1.25rem;
+        font-weight: 300;
         width: 90%;
         text-align: left;
+        padding: 0;
+        margin: 0 0 10px 0px;
     }
     .section5-content .techsupport_button {
-        display: block;
+        display: inline-block;
         text-align: center;
         background-color: #1C1E28;
         padding: 0.5em 0.5em;
-        font-size: 1em;
-        font-weight: 400;
-        margin: 1em auto 0.5em auto;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 1em auto 1em auto;
         border: none;
         border-radius: 5px;
-        width: 60%;
-        align-self: center;
+        white-space: nowrap;
+        max-width: fit-content;
     }
     .section5-content .warranty {
         display: block;
