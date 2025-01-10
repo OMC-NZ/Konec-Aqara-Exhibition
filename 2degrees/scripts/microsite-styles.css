@@ -157,6 +157,9 @@ nav ul li a:hover {
 #hamburger-menu.open:hover span {
     background-color: #BE3D26;
 }
+#hamburger-menu:not(.open) span {
+    background-color: white;
+}
 
 @media (max-width: 1000px) {
     #hamburger-menu {
@@ -556,9 +559,6 @@ nav ul li a:hover {
         padding-bottom: 0.75em;
         text-align: left;
         list-style-type: none;
-    }
-    .accordion-header {
-        margin: 0 auto;
     }
 }
 
