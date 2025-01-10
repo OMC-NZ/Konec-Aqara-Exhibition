@@ -455,6 +455,7 @@ nav ul li a:hover {
     padding-bottom: 0.5em;
     text-align: left;
     list-style-type: none;
+    position: relative;
 }
 .section3-content p {
     margin: 0 60px 0 60px;
@@ -463,6 +464,13 @@ nav ul li a:hover {
     font-weight: 300;
     color: #DFD2B0;
     padding: 0.25em 0 1em 0;
+}
+.section3-content li::before {
+    content: '-';
+    color: #DFD2B0;
+    font-size: 1.2rem;
+    position: absolute;
+    left: -1em;
 }
 .section3-content a {
     color: #FFFFFF;
@@ -566,15 +574,27 @@ nav ul li a:hover {
         width: 90%;
         text-align: left;
     }
+    .section3-content a {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
     .section3-content ul {
         width: auto;
-        margin-left: 20px;
+        margin: 10px 0 10px 20px;
     }
     .section3-content li {
         font-size: 1.25rem;
-        padding-bottom: 0.75em;
+        padding: 0 0 15px 5px;
+        margin: 0;
         text-align: left;
         list-style-type: none;
+    }
+    .section3-content li::before {
+        content: '-';
+        color: #DFD2B0;
+        font-size: 1.2rem;
+        position: absolute;
+        left: -0.25em;
     }
     .accordion-content {
         padding-left: 0;
