@@ -853,6 +853,9 @@ a.buy-now-link {
     color: #FFFFFF;
     text-align: left;
 }
+.section6-content li br {
+    display: none;
+}
 .section6-content a {
     color: #B9B2AA;
     font-weight: 400;
@@ -884,7 +887,8 @@ a.buy-now-link {
         margin-left: 2em;
         width: 90%;
     }
-
+    .section6-content li br {
+        display: inline;
 }
 
 /* Section 7 - Footer */

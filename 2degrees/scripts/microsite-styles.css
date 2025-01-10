@@ -75,8 +75,11 @@ header .logo img {
     display: block;
 }
 @media (max-width: 768px) {
-    .logo img {
-        max-height: 30px; /* Adjust for smaller screens */
+    header .logo {
+        padding-left: 2%;
+    }
+    header .logo img {
+        max-height: 35px; /* Adjust for smaller screens */
         height: auto;
         width: auto;
         display: block;
@@ -84,8 +87,8 @@ header .logo img {
     }
 }
 @media (max-width: 480px) {
-    .logo img {
-        max-height: 25px; /* Further adjust for extra-small screens */
+    header .logo img {
+        max-height: 35px; /* Further adjust for extra-small screens */
     }
 }
 
@@ -162,24 +165,25 @@ nav ul li a:hover {
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-        padding-right: 5%;
+        padding-right: 3%;
     }
     nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 15%;
-        right: 8%;
+        right: 6%;
         width: auto;
         height: auto;
         max-height: 45vh;
-        background-color: rgba(28, 30, 40, 0.80);
+        background-color: rgba(28, 30, 40, 0.90);
         justify-content: center;
         align-items: center;
         border: 1px solid #1C1E28;
         border-radius: 10px;
         padding: 0.5em;
         box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         z-index: 1000;
     }
     nav ul.show {
@@ -267,15 +271,15 @@ nav ul li a:hover {
         padding: 0;
     }
     .section1-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 400;
         padding-top: 30px;
         margin: 0 0 0 10px;
         text-align: left;
     }
     .section1-content h2 {
-        font-size: 2rem;
-        margin: 0 0 0 10px;
+        font-size: 1.75rem;
+        margin: 10px 0 0 10px;
         padding-bottom: 50px;
         font-weight: 300;
         text-align: left;
@@ -314,6 +318,9 @@ nav ul li a:hover {
     font-weight: 400;
     font-size: 3rem;
 }
+.section2-content h1 br {
+    display: none;
+}
 .section2-content h2{
     margin: 20px 0 0 30px;
     font-weight: 300;
@@ -327,7 +334,7 @@ nav ul li a:hover {
 }
 .section2-content p {
     margin: 10px 60px 0 60px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.2rem;
     font-weight: 200;
     padding: 0.25em 0 1em 0;
@@ -350,15 +357,17 @@ nav ul li a:hover {
         padding: 0;
     }
     .section2-content h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-weight: 300;
-        margin-left: 10px;
-        padding-bottom: 20px;
+        margin: 0 0 0 10px;
         text-align: left;
+    }
+    .section2-content h1 br {
+        display: inline;
     }
     .section2-content h2 {
         font-size: 1.5rem;
-        margin-left: 10px;
+        margin: 20px 0 0 10px;
         padding-bottom: 15px;
         font-weight: 200;
         text-align: left;
@@ -446,11 +455,11 @@ nav ul li a:hover {
 
 /* Accordion Styles */
 .accordion {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .accordion-header {
-    width: 100%;
+    width: 90%;
     color: #DFD2B0;
     display: flex;
     justify-content: space-between;
@@ -584,7 +593,7 @@ nav ul li a:hover {
 }
 .section4-content p {
     margin: 10px 60px 0 60px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.2rem;
     font-weight: 200;
     padding: 0.25em 0 0.5em 0;
@@ -715,7 +724,7 @@ a.store_button:hover {
 }
 .section5-content p {
     margin: 10px 60px 0 60px;
-    text-align: justify;
+    text-align: left;
     font-size: 1.2rem;
     font-weight: 200;
     padding-top: 0.25em;
