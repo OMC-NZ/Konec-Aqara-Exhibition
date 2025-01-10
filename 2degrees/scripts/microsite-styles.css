@@ -317,9 +317,19 @@ nav ul li a:hover {
     margin: 0 0 0 30px;
     font-weight: 400;
     font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
 }
-.section2-content h1 br {
-    display: none;
+.slogan-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section2-content .line-one,
+.section2-content .line-two {
+    display: inline-block;
+    width: auto;
+    flex-grow: 1;
 }
 .section2-content h2{
     margin: 20px 0 0 30px;
@@ -361,9 +371,6 @@ nav ul li a:hover {
         font-weight: 300;
         margin: 0 0 0 10px;
         text-align: left;
-    }
-    .section2-content h1 br {
-        display: inline;
     }
     .section2-content h2 {
         font-size: 1.75rem;
