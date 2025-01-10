@@ -110,6 +110,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #BE3D26;
 }
+
 @media (max-width: 1600px) {
     nav ul {
         list-style: none;
@@ -125,7 +126,11 @@ nav ul li a:hover {
         font-size: 1.25rem;
         margin-right: 1em;
     }
+    nav ul li a:hover {
+        color: #BE3D26;
+    }
 }
+
 /* Mobile Hamburger Nav */
 #hamburger-menu {
     display: none;
@@ -144,6 +149,7 @@ nav ul li a:hover {
 #hamburger-menu:hover span {
     background-color: #BE3D26;
 }
+
 /* Morph into "X" when menu is open */
 #hamburger-menu.open span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
@@ -170,8 +176,9 @@ nav ul li a:hover {
         transform: translateY(-50%);
         padding-right: 3%;
     }
+
     nav ul {
-        display: none;
+        display: none;  /* Initially hidden */
         flex-direction: column;
         position: absolute;
         top: 15%;
@@ -189,15 +196,19 @@ nav ul li a:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         z-index: 1000;
     }
+
+    /* The menu is displayed when 'show' class is added */
     nav ul.show {
-        display: flex;
+        display: flex; /* Flex for visibility */
     }
+
     nav ul li {
         margin: 0.7em 0; /* Increased margin for easier use on mobile */
         display: flex;
         justify-content: center;
         width: 100%;
     }
+
     nav ul li a {
         font-size: 1.5rem; /* Slightly larger font for visibility */
         text-align: center;
@@ -209,7 +220,13 @@ nav ul li a:hover {
         overflow: hidden; /* Prevent overflow of text */
         text-overflow: ellipsis;
     }
+
+    /* Ensure hover color is applied when menu is shown */
+    nav ul.show li a:hover {
+        color: #BE3D26;
+    }
 }
+
 
 /* --------------- BODY CONTENT --------------- */
 /* Section 1 - Home */
