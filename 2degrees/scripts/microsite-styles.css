@@ -66,7 +66,7 @@ header .logo {
     align-items: center;
     justify-content: space-between;
     max-height: 40px;
-    padding-left: 1em;
+    padding-left: 10px;
 }
 header .logo img {
     max-height: 40px;
@@ -123,7 +123,7 @@ nav ul li a:hover {
         color: #FFFFFF;
         text-decoration: none;
         transition: color 0.3s;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         margin-right: 1em;
     }
     nav ul li a:hover {
@@ -399,7 +399,7 @@ nav ul li a:hover {
         text-align: left;
     }
     .section2-content p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 300;
         margin: 0 0 40px 10px;
         width: 90%;
@@ -575,7 +575,7 @@ nav ul li a:hover {
         text-align: left;
     }
     .section3-content a {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 300;
     }
     .section3-content ul {
@@ -583,7 +583,7 @@ nav ul li a:hover {
         margin: 10px 0 10px 20px;
     }
     .section3-content li {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         padding: 0 0 15px 5px;
         margin: 0;
         text-align: left;
@@ -704,7 +704,7 @@ a.store_button:hover {
         text-align: left;
     }
     .section4-content p {
-        font-size: 1.25em;
+        font-size: 1.2rem;
         font-weight: 300;
         margin-left: 10px;
         width: 90%;
@@ -871,7 +871,7 @@ a.techsupport_button:hover {
         text-align: left;
     }
     .section5-content p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 300;
         margin: 0 0 10px 10px;
         padding: 0;
@@ -891,7 +891,7 @@ a.techsupport_button:hover {
     }
     .section5-content li {
         list-style-type: none;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 300;
         width: 90%;
         text-align: left;

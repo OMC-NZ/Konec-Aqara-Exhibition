@@ -1,14 +1,18 @@
 // Hamburger Menu
 function toggleMenu() {
     const menu = document.querySelector("nav ul");
+    const hamburger = document.querySelector("#hamburger-menu");
     menu.classList.toggle("show");
+    hamburger.classList.toggle("open");
 }
 
 // Close menu when a menu item is clicked
 document.querySelectorAll("nav ul li a").forEach(link => {
     link.addEventListener("click", () => {
         const menu = document.querySelector("nav ul");
+        const hamburger = document.querySelector("#hamburger-menu");
         menu.classList.remove("show");
+        hamburger.classList.remove("open");
     });
 });
 
