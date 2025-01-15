@@ -1,3 +1,9 @@
+// Logo Index URL - EDIT for customer
+function redirectToIndex() {
+    window.location.href = 'https://www.aqarahome.nz/Technology_Store/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
+}
+
+
 // Hamburger Menu
 function toggleMenu() {
     const menu = document.querySelector("nav ul");
