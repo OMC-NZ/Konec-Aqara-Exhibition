@@ -3,6 +3,11 @@ function redirectToIndex() {
     window.location.href = 'https://www.aqarahome.nz/2degrees/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
 }
 
+// Buy Now URL - EDIT for customer
+function redirectToStore() {
+    window.open('https://www.2degrees.nz/shop', '_blank'); //<<< note full absolute path to ensure integrity.
+}
+
 
 // Hamburger Menu
 function toggleMenu() {

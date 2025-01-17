@@ -1,6 +1,11 @@
 // Logo Index URL - EDIT for customer
 function redirectToIndex() {
-    window.location.href = 'https://www.aqarahome.nz/2degrees/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
+    window.location.href = 'https://www.aqarahome.nz/Noel_Leeming/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
+}
+
+// Buy Now URL - EDIT for customer
+function redirectToStore() {
+    window.open('https://www.noelleeming.co.nz/c/smarthome?prefn1=brand&prefv1=Aqara', '_blank'); //<<< note full absolute path to ensure integrity.
 }
 
 

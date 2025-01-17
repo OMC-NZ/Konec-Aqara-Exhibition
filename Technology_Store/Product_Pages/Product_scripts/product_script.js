@@ -3,6 +3,11 @@ function redirectToIndex() {
     window.location.href = 'https://www.aqarahome.nz/Technology_Store/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
 }
 
+// Buy Now URL - EDIT for customer
+function redirectToStore() {
+    window.open('https://www.thetechnologystore.co.nz/collections/aqara', '_blank'); //<<< note full absolute path to ensure integrity.
+}
+
 
 // Hamburger Menu
 function toggleMenu() {
