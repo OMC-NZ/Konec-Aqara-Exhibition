@@ -5,7 +5,7 @@ function redirectToIndex() {
 
 // Buy Now URL - EDIT for customer
 function redirectToStore() {
-    window.open('https://www.noelleeming.co.nz/c/smarthome?prefn1=brand&prefv1=Aqara', '_blank'); //<<< note full absolute path to ensure integrity.
+    window.open('https://www.2degrees.nz/shop', '_blank'); //<<< note full absolute path to ensure integrity.
 }
 
 
