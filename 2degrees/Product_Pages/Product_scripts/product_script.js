@@ -5,7 +5,7 @@ function redirectToIndex() {
 
 // Buy Now URL - EDIT for customer
 function redirectToStore() {
-    window.open('https://www.2degrees.nz/shop', '_blank'); //<<< note full absolute path to ensure integrity.
+    window.open('https://www.2degrees.nz/shop/browse?filterKey1=itemBrand&filterValue1=Aqara&filterKey2=itemCategory&filterValue2=Phone+Accessories', '_blank'); //<<< note full absolute path to ensure integrity.
 }
 
 
