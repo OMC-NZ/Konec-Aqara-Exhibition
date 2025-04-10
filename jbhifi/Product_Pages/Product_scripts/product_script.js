@@ -1,6 +1,6 @@
 // Logo Index URL - EDIT for customer
 function redirectToIndex() {
-    window.location.href = 'https://www.aqarahome.nz/noelleeming/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
+    window.location.href = 'https://www.aqarahome.nz/jbhifi/index.html'; //<<< note full absolute path to ensure integrity, aka aqarahome.nz/xxx/index.html
 }
 
 // Buy Now URL - EDIT for customer
