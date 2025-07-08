@@ -5,7 +5,7 @@ function redirectToIndex() {
 
 // Buy Now URL - EDIT for customer
 function redirectToStore() {
-    window.open('https://www.aqarahome.nz', '_blank'); //<<< note full absolute path to ensure integrity.
+    window.open('https://www.harveynorman.co.nz/aqara/', '_blank'); //<<< note full absolute path to ensure integrity.
 }
 
 

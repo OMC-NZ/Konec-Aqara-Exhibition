@@ -1,17 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqara Home - Coming Soon</title>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aqara New Zealand</title>
+    <link rel="icon" href="Images/Icons/Favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C600%7CSource%20Sans%20Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main_scripts/comingsoon_styles.css">
-</head>
-<body>
-    <div class="container">
-        <img src="Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo" class="logo">
-        <h2>Aqara Home</h2>
-        <h1>COMING SOON</h1>
-    </div>
-</body>
+    <link rel="stylesheet" href="mn_scripts/microsite-styles.css">
+    <script src="mn_scripts/microsite-scripts.js" defer></script>
+    </head>
+    <body>
+        <main class="container">
+    <!-- <<<<<< HEADER >>>>>> -->
+        <header>
+            <div class="logo"><a href="index.html"><img src="Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a></div>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="Subpages/About.html">About</a></li>
+                    <li><a href="Subpages/Products.html">Products</a></li>
+                    <li><a href="Subpages/Stores.html">Stores</a></li>
+                    <li><a href="Subpages/Support.html">Support</a></li>
+                </ul>
+                <div id="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+<!-- <<<<< BODY >>>>> -->
+  <section class="banner-slider">
+            <div class="banner-container" id="bannerContainer">
+                <!-- Slide 1 -->
+                <div class="banner-slide">
+                    <div class="banner-background">
+                        <img class="desktop-img" src="Images/Homepage Banners/Desktop/Aqara-Smart.Lock.U100.png" alt="Smart Lock U100 Desktop">
+                        <img class="mobile-img" src="Images/Homepage Banners/Mobile/Aqara-Smart.Lock.U100-mobile.png" alt="Smart Lock U100 Mobile">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="banner-slide">
+                    <div class="banner-background">
+                        <img class="desktop-img" src="Images/Homepage Banners/Desktop/Cube.png" alt="Cube T1 Pro Desktop">
+                        <img class="mobile-img" src="Images/Homepage Banners/Mobile/Cube-mobile.png" alt="Cube T1 Pro Mobile">
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="banner-slide">
+                    <div class="banner-background">
+                        <img class="desktop-img" src="Images/Homepage Banners/Desktop/G410Wall.png" alt="Smart Video Doorbell G410 Desktop">
+                        <img class="mobile-img" src="Images/Homepage Banners/Mobile/G410Wall-mobile.png" alt="Smart Video Doorbell G410 Mobile">
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="banner-slide">
+                    <div class="banner-background">
+                        <img class="desktop-img" src="Images/Homepage Banners/Desktop/G5White.png" alt="G5 Camera Hub Desktop">
+                        <img class="mobile-img" src="Images/Homepage Banners/Mobile/G5White-mobile.png" alt="G5 Camera Hub Mobile">
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="banner-slide">
+                    <div class="banner-background">
+                        <img class="desktop-img" src="Images/Homepage Banners/Desktop/U300.png" alt="Smart Lock U300 Desktop">
+                        <img class="mobile-img" src="Images/Homepage Banners/Mobile/U300-mobile.png" alt="Smart Lock U300 Mobile">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="banner-arrow prev" id="prevBtn">‹</button>
+            <button class="banner-arrow next" id="nextBtn">›</button>
+
+            <!-- Dot Navigation -->
+            <div class="banner-nav" id="bannerNav">
+                <span class="banner-dot active" data-slide="0"></span>
+                <span class="banner-dot" data-slide="1"></span>
+                <span class="banner-dot" data-slide="2"></span>
+                <span class="banner-dot" data-slide="3"></span>
+                <span class="banner-dot" data-slide="4"></span>
+            </div>
+        </section>
+
+    
+        <!-- Section 2 - About Aqara -->
+        <section class="section2">
+            <div class="section2-content">
+                <div class="left">
+                    <h1>The Aqara Range</h1>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 - Category Thumbnails -->
+        <section class="category-thumbnails">
+            <!-- 6 Thumbnails for 2 rows of 3 -->
+            <a href="Subpages/Products.html#doorlocks" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Doorlocks & Security.png" alt="Doorlocks & Security">
+                <div class="overlay"></div>
+                <div class="category-name">Doorlocks & Security</div>
+            </a>
+    
+            <a href="Subpages/Products.html#cameras" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Cameras.png" alt="Cameras">
+                <div class="overlay"></div>
+                <div class="category-name">Cameras</div>
+            </a>
+    
+            <a href="Subpages/Products.html#hubs" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Hubs.png" alt="Hubs">
+                <div class="overlay"></div>
+                <div class="category-name">Hubs</div>
+            </a>
+    
+            <a href="Subpages/Products.html#lighting" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Lighting.png" alt="Lighting">
+                <div class="overlay"></div>
+                <div class="category-name">Lighting</div>
+            </a>
+    
+            <a href="Subpages/Products.html#sensors" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Sensors.png" alt="Sensors">
+                <div class="overlay"></div>
+                <div class="category-name">Sensors</div>
+            </a>
+    
+            <a href="Subpages/Products.html#controllers" class="category-thumbnail">
+                <img src="Images/Category-thumbnails/Curtain Controllers.png" alt="Controllers">
+                <div class="overlay"></div>
+                <div class="category-name">Controllers</div>
+            </a>
+        </section>
+        <!-- Section 4 - Compatibility -->
+        <section class="compatibility-section">
+            <h2>Wide Compatibility</h2>
+            <div class="compatibility-grid">
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/matter.png" alt="Matter">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/apple.png" alt="Works with Apple Home">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/alexa.png" alt="Works with Alexa">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/google.png" alt="Works with Google Home">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/samsung.png" alt="Works with Samsung SmartThings">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/clova.png" alt="Works with CLOVA">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/alice.png" alt="Works with Alice">
+                </div>
+                <div class="compatibility-item">
+                    <img src="Images/Compatible Ecosystems/ifttt.png" alt="Works with IFTTT">
+                </div>
+            </div>
+        </section>
+        
+        <!--- Footer-->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-logo"><a href="index.html"><img src="Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a>                    
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="Subpages/About.html">About</a></li>
+                            <li><a href="Subpages/Products.html">Products</a></li>
+                            <li><a href="Subpages/Stores.html">Stores</a></li>
+                            <li><a href="Subpages/Support.html">Support</a></li>
+                            <li><a href="Subpages/Privacy Policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/AqaraNewZealand">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/aqara_nz">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/@AqarahomeNZ">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    </body>
 </html>
