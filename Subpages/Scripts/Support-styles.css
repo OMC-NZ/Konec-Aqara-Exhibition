@@ -441,7 +441,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Push buttons to bottom of columns */
+    margin-top: 0; /* Push buttons to bottom of columns */
     padding-top: 20px;
 }
 .section2-content .techsupport_button {
@@ -466,6 +466,12 @@ a.techsupport_button:hover {
     color: #b9b2aa;
     background-color: #1C1E28;
 }
+/* Support iFrame */
+.js-only {
+    display: block;
+    width: 100%;
+}
+
 .section2-content .warranty {
     display: flex;
     justify-content: center;
