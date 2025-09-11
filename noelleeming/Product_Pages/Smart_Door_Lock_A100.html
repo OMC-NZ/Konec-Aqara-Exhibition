@@ -17,7 +17,6 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#info">Product Info</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#automations">Automations</a></li>
                     <li><a href="#support">Product Support</a></li>
                 </ul>
@@ -27,7 +26,7 @@
                     <span></span>
                 </div>
             </nav>
-            <a href="javascript:void(0);" onclick="redirectToStore()" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
+                <a href="javascript:void(0);" onclick="redirectToStore()" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
         </header>
 
 <!-- <<<<< BODY >>>>> -->
@@ -36,30 +35,50 @@
         <section class="section1" id="home">
             <div class="section1-content">
                 <div class="left">
+                    <div class="product-header">
                     <h1>Smart Door Lock A100</h1>
+                    </div>
+                        <!-- Available colours section -->
+                        <div class="available-colours">
+                            <span>Available colours:</span>
+                            <span class="colour-circle black" data-colour="Black"></span>
+                        </div>
                     <ul>
-                        <li>The Smart Door Lock A100 starts the new series of Aqara locks that fully support remote control as well as third-party ecosystems.</li>
+                        <li>Aqara Smart Door Lock A100 - secure keyless entry with fingerprint, passcode & app control. Works with HomeKit, Google, Alexa & Aqara Home. Sleek & reliable.</li>
                     </ul>
                     <div class="responsive-table">
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><img src="../../Images/Icons/17 Smart Door Lock A100/1 Battery-White.svg" alt="icon_1"><p>18-month Batter Life</p></td>
-                                    <td><img src="../../Images/Icons/17 Smart Door Lock A100/2 Unlock Methods-White.svg" alt="icon_2"><p>9 Unlock Methods</p></td>
-                                    <td><img src="../../Images/Icons/17 Smart Door Lock A100/3 Fingerprint-White.svg" alt="icon_3"><p>Ergonomic Fingerprint Reader</p></td>
-                                    <td><img src="../../Images/Icons/17 Smart Door Lock A100/4 Mechanical Key-White.svg" alt="icon_4"><p>Mechanical Key and Type-C Port</p></td>
-                                    <td><img src="../../Images/Icons/17 Smart Door Lock A100/5 Google Apple Support-White.svg" alt="icon_4"><p>Google Home and AppleHome Support</p></td>
-                                    <td>&nbsp;</td>
+                                    <td><img src="../../Images/Icons/17%20Smart%20Door%20Lock%20A100/1%20Battery-White.svg" alt="icon_1"><p>18-month Battery Life</p></td>
+                                    <td><img src="../../Images/Icons/17%20Smart%20Door%20Lock%20A100/2%20Unlock%20Methods-White.svg" alt="icon_2"><p>9 Unlock Methods</p></td>
+                                    <td><img src="../../Images/Icons/17%20Smart%20Door%20Lock%20A100/3%20Fingerprint-White.svg" alt="icon_3"><p>Ergonomic Fingerprint Reader</p></td>
+                                    <td><img src="../../Images/Icons/17%20Smart%20Door%20Lock%20A100/4%20Mechanical%20Key-White.svg" alt="icon_4"><p>Mechanical Key and Type-C Port</p></td>
+                                    <td><img src="../../Images/Icons/17%20Smart%20Door%20Lock%20A100/5%20Google%20Apple%20Support-White.svg" alt="icon_5"><p>Smart Home Integration</p></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="right">
-                    <img src="../../Images/Product_Images/Smart_Lock_A100_Front.png" alt="Smart Door Lock A100">
+        <div class="right">
+            <div class="product-gallery">
+                <div class="gallery-container">
+                            <img src="../../Images/Product_Images/Smart_Door_Lock_A100/Smart_Door_Lock_A100_Front.png" alt="Smart Lock A100 Front View" class="active">
+                            <img src="../../Images/Product_Images/Smart_Door_Lock_A100/Smart_Door_Lock_A100_Profile.png" alt="Smart Lock A100 Profile View">
+                          <!-- Add more gallery images here -->
+            <!-- Navigation Arrows -->
+                    <button class="gallery-arrow prev" onclick="changeImage(-1)" aria-label="Previous image"></button>
+                    <button class="gallery-arrow next" onclick="changeImage(1)" aria-label="Next image"></button>
+                </div>
+          
+                <div class="gallery-nav">
+                    <span class="gallery-dot active" data-index="0" onclick="showImage(0)"></span>
+                    <span class="gallery-dot" data-index="1" onclick="showImage(1)"></span>
                 </div>
             </div>
-        </section>
+        </div> 
+    </div>
+</section>
         
         <!-- Section 2 - Product Scene -->
         <section class="section2">
@@ -67,23 +86,25 @@
         </section>
 
         <!-- Section 3 - Product Info -->
-         <section class="section3" id="info">
+        <section class="section3" id="info">
             <div class="section3-content">
                 <h2>Product Info</h2>
-            <h3>Description</h3>
-            <p>The Aqara Smart Door Lock A100 is a versatile and secure smart lock that integrates seamlessly with major smart home platforms, including Apple HomeKit, Google Assistant, Alexa, and Aqara Home. With multiple unlocking methods, such as fingerprint, passcode, app control, and mechanical key, it offers flexible access for every user. The A100 uses an advanced fingerprint sensor and robust encryption technology, ensuring both convenience and security. Equipped with a durable build, anti-peep keypad, and tamper alarms, this lock is designed for high security and everyday use. Its sleek, modern design complements any home decor, while battery-powered operation ensures reliability, even in the event of a power outage. The Aqara A100 offers peace of mind, letting you manage and monitor access to your home from anywhere.</p>
-                <h3>Key Features</h3>
+                    <h3>Description</h3>
+                <p>The Aqara Smart Door Lock A100 is a versatile and secure smart lock that integrates seamlessly with major smart home platforms, including Apple HomeKit, Google Assistant, Alexa, and Aqara Home.</p><br>
+                <p>With multiple unlocking methods, such as fingerprint, passcode, app control, and mechanical key, it offers flexible access for every user. The A100 uses an advanced fingerprint sensor and robust encryption technology, ensuring both convenience and security. Equipped with a durable build, anti-peep keypad, and tamper alarms, this lock is designed for high security and everyday use.</p><br>
+                <p>Its sleek, modern design complements any home decor, while battery-powered operation ensures reliability, even in the event of a power outage. The Aqara A100 offers peace of mind, letting you manage and monitor access to your home from anywhere.</p><br>
+            <h3>Key Features</h3>
                 <ul>
                     <li><b>18-Month Battery Life:</b>Powered by 8 AA batteries, lasting over 1.5 years.</li>
-                        <li><b>9 Unlock Methods:</b>Choose from fingerprint, permanent/one-time/periodic password, NFC card, mechanical key, Aqara Home app, HomeKit/Siri, or Google Assistant.</li>
-                            <li><b>Quick Fingerprint Access:</b>Fast reader in the handle for natural, instant unlocking.</li>
-                                <li><b>Backup Key & Type-C Port:</b>Use a mechanical key or charge with the hidden Type-C port if batteries run out.</li>
-                                    <li><b>Smart Home Integration:</b>Supports HomeKit and Google Assistant.</li>
-                                        <li><b>Zigbee & Bluetooth Connectivity:</b>Zigbee ensures stability; Bluetooth allows direct phone connection.</li>
-                                            <li><b>Invisible Keypad with Away Mode:</b>Hidden keypad with Away Mode button for automations.</li>
-                                                <li><b>Durable Aluminium Design:</b>Stylish, fingerprint-resistant aluminium body.</li>
-                                                    <li><b>Remote Configuration:</b>Manage passwords and settings remotely, ideal for rentals.</li>
-                                                        <li><b>Remote Unlock:</b>Unlock via Aqara Home app, perfect for in-home deliveries.</li>
+                    <li><b>9 Unlock Methods:</b>Choose from fingerprint, permanent/one-time/periodic password, NFC card, mechanical key, Aqara Home app, HomeKit/Siri, or Google Assistant.</li>
+                    <li><b>Quick Fingerprint Access:</b>Fast reader in the handle for natural, instant unlocking.</li>
+                    <li><b>Backup Key & Type-C Port:</b>Use a mechanical key or charge with the hidden Type-C port if batteries run out.</li>
+                    <li><b>Smart Home Integration:</b>Supports HomeKit and Google Assistant.</li>
+                    <li><b>Zigbee & Bluetooth Connectivity:</b>Zigbee ensures stability; Bluetooth allows direct phone connection.</li>
+                    <li><b>Invisible Keypad with Away Mode:</b>Hidden keypad with Away Mode button for automations.</li>
+                    <li><b>Durable Aluminium Design:</b>Stylish, fingerprint-resistant aluminium body.</li>
+                    <li><b>Remote Configuration:</b>Manage passwords and settings remotely, ideal for rentals.</li>
+                    <li><b>Remote Unlock:</b>Unlock via Aqara Home app, perfect for in-home deliveries.</li>
                 </ul>
                 <p id="additional-notes">
                     Note:<br>
@@ -93,7 +114,6 @@
                 </p>
                 <h3>Specifications</h3>
             <table>
-                <tr><td>Category</td><td>Smartlock</td></tr>
                 <tr><td>Colour</td><td>Black</td></tr>
                 <tr><td>Model</td><td>ZNMS02ES</td></tr>
                 <tr><td>Dimensions</td><td>375 × 77 × 23.6 mm</td></tr>
@@ -108,59 +128,42 @@
             </div>
          </section>
 
-         <!-- Section 4 - Product Images -->
-         <section class="section4" id="gallery">
-            <div class="section4-content">
-                <h2>Gallery</h2>
-                    <div class="gallery_table">
-                        <table>
-                            <tr>
-                                <td><img src="../../Images/Product_Images/Smart_Lock_A100_Front.png" alt="Gallery Image 1"></td>
-                                <td><img src="../../Images/Product_Images/Smart_Lock_A100_Side.png" alt="Gallery Image 2"></td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>Front Image</td>
-                                <td>Side Image</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>                 
-            </div>
-        </section>
-
         <!-- Section 5 - Automations-->
         <section class="section5" id="automations">
             <div class="section5-content">
                 <h2>Automations and Complementary Products</h2>
                 <p id="action-comment">Click a product image to go to its page details</p>
                 <!-- Automation #1 -->
-                <h3>Scene control</h3>
-                <p>Trigger different scenes depending on who has entered the room</p>
+                <h3>Scene: Trigger different scenes depending on who has entered the room</h3>
+                <p>When various people have different tastes, “personal” triggers can be set to set the scene depending on who is entering the room</p>
                 <div class="responsive-table">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Required Automation Products:</td>
-                                <td><a href="#"><img src="../../Images/Product_Images/Smart_Lock_A100_Front.png" alt="Smart Door Lock A100"><p>Smart Door Lock A100</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3_Front.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Ceiling_Light_T1M.html" target="_blank"><img src="../../Images/Product_Images/Ceiling_Light_T1M.png" alt="Ceiling Light T1M"><p>Ceiling Light T1M</p></a></td>
-                                <td><a href="#"><img src="../../Images/Icons/00 Generic Icons/Smart_Speaker.png" alt="Smart Speaker" style="height: 70px;"><p>Smart Speaker</p></a></td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Smart_Door_Lock_A100/Smart_Door_Lock_A100_Front.png" alt="Smart Door Lock A100"><p>Smart Door Lock A100</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="Ceiling_Light_T1M.html" target="_blank"><img src="../../Images/Product_Images/LED_Strip_T1/LED_Strip_T1_Front.png" alt="LED Strip T1"><p>LED Strip T1</p></a></td>
+                                <td><a href="#"><img src="../../Images/Icons/00%20Generic%20Icons/Smart_Speaker.png" alt="Smart Speaker" style="transform: scale(0.6); transform-origin: center; display: inline-block;"><p>Smart Speaker</p></a></td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) – Person 1 unlocks the door // THEN (Action) – set lighting to warm white</p>
+                <p>IF (Condition) – Person 2 unlocks the door // THEN (Action) – set lighting to rainbow and turn on the music</p>
+
                 <!-- Automation #2 -->
-                <h3>Enhance Security</h3>
+                <h3>Scene: Increase Entrance Security</h3>
                 <p>Increase security by recording and initiating face recognition in the event of an unknown person enters the house.</p>
                 <div class="responsive-table">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Required Automation Products:</td>
-                                <td><a href="#"><img src="../../Images/Product_Images/Smart_Lock_A100_Front.png" alt="Smart Door Lock A100"><p>Smart Door Lock A100</p></a></td>
-                                <td><a href="Camera_Hub_G3.html" target="_blank"><img src="../../Images/Product_Images/Camera_Hub_G3_Front.png" alt="Camera Hub G3"><p>Camera Hub G3</p></a></td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Smart_Door_Lock_A100/Smart_Door_Lock_A100_Front.png" alt="Smart Door Lock A100"><p>Smart Door Lock A100</p></a></td>
+                                <td><a href="Camera_Hub_G3.html" target="_blank"><img src="../../Images/Product_Images/Camera_Hub_G3/Camera_Hub_G3_Profile.png" alt="Camera Hub G3"><p>Camera Hub G3</p></a></td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -168,6 +171,9 @@
                         </tbody>
                     </table>
                 </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) – Lock opened using  a mechanical key // THEN (Action) – Turn on Camera Hub G3, face the door, start recording and send notification</p>
+
             </div>
         </section>
 
@@ -176,13 +182,14 @@
             <div class="section6-content">
                 <h2>Product Support Documents</h2>
                     <ul>
-                        <li>Step by step installation instruction video:<br><a href="https://youtu.be/d-dIjmYbeS4" target="_blank">Installation Video (00:11:55)</a></li>
-                        <li>Product User Manual:<br><a href="../../User_manuals/Aqara-Smart.Lock.A100_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
-                        <li>Product FAQs:<br><a href="../../FAQs/Aqara-Smart.Lock.A100-FAQ.pdf" target="_blank">Frequently Asked Questions (PDF)</a></li>
+                        <li>Step by step installation instruction video: <br><a href="https://youtu.be/d-dIjmYbeS4" target="_blank">Installation Video (00:11:55)</a></li>
+                        <li>Product User Manual: <br><a href="../../User_manuals/Aqara-Smart.Lock.A100_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
+                        <li>Product FAQs: <br><a href="../../FAQs/Aqara-Smart.Lock.A100-FAQ.pdf" target="_blank">Frequently Asked Questions (PDF)</a></li>
                     </ul>
             </div>  
-        </section>
-        <!-- Section 7 - Footer-->
+    </section>
+    
+    <!-- Section 7 - Footer-->
          <section class="section7">
             <div class="section7-content">
                 <h1>Aqara - Continuous Connection</h1>

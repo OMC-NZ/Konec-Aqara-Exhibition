@@ -17,7 +17,6 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#info">Product Info</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#automations">Automations</a></li>
                     <li><a href="#support">Product Support</a></li>
                 </ul>
@@ -27,7 +26,7 @@
                     <span></span>
                 </div>
             </nav>
-            <a href="javascript:void(0);" onclick="redirectToStore()" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
+                <a href="javascript:void(0);" onclick="redirectToStore()" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
         </header>
 
 <!-- <<<<< BODY >>>>> -->
@@ -36,10 +35,16 @@
         <section class="section1" id="home">
             <div class="section1-content">
                 <div class="left">
-                    <h1>Water Leak Sensor T1</h1>
+                    <div class="product-header">
+                <h1>Water Leak Sensor T1</h1>
+                    </div>
+                        <!-- Available colours section -->
+                        <div class="available-colours">
+                            <span>Available colours:</span>
+                            <span class="colour-circle white" data-colour="White"></span>
+                        </div>
                     <ul>
-                        <li>The IP67-certified Leak Sensor detects water levels as low as 0.5mm and sends alert notifications or activates preset automations.</li>
-                        <li>Comes with screws for connecting wires (probes) to extend the detection area.</li>
+                        <li>Protect your home with the Aqara Water Leak Sensor T1. Detect leaks early, prevent damage, and get instant alerts via Aqara Home app. Durable & long-lasting.</li>
                     </ul>
                     <div class="responsive-table">
                         <table>
@@ -47,118 +52,158 @@
                                 <tr>
                                     <td><img src="../../Images/Icons/12 Water Leak Sensor/1 Data Capture-White.svg" alt="icon_1"><p>Historic Data Capture</p></td>
                                     <td><img src="../../Images/Icons/12 Water Leak Sensor/2 No Tools-White.svg" alt="icon_2"><p>No Tools Needed</p></td>
-                                    <td><img src="../../Images/Icons/12 Water Leak Sensor/3 Alert-White.svg" alt="icon_3"><p>Real Time Alert and Notification</p></td>
+                                    <td><img src="../../Images/Icons/12 Water Leak Sensor/3 Alert-White.svg" alt="icon_3"><p>Real-Time Alert and Notification</p></td>
                                     <td><img src="../../Images/Icons/12 Water Leak Sensor/4 Battery-White.svg" alt="icon_4"><p>2-Year Battery Life</p></td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="right">
-                    <img src="../../Images/Product_Images/Water_Leak_Sensor_T1.png" alt="Water Leak Sensor">
+            <div class="product-gallery">
+                <div class="gallery-container">
+                    <img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Front.png" alt="Water Leak Sensor T1 Front" class="active">
+                    <img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Profile.png" alt="Water Leak Sensor T1 Angle">
+                    <img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Side.png" alt="Water_Leak_Sensor_T1 Side View">
+                    <img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Box_Art.png" alt="Box Art">
+                    <!-- Navigation Arrows -->
+                    <button class="gallery-arrow prev" onclick="changeImage(-1)" aria-label="Previous image"></button>
+                    <button class="gallery-arrow next" onclick="changeImage(1)" aria-label="Next image"></button>
+                </div>
+                <div class="gallery-nav">
+                    <span class="gallery-dot active" data-index="0" onclick="showImage(0)"></span>
+                    <span class="gallery-dot" data-index="1" onclick="showImage(1)"></span>
+                    <span class="gallery-dot" data-index="2" onclick="showImage(2)"></span>
+                    <span class="gallery-dot" data-index="3" onclick="showImage(3)"></span>
                 </div>
             </div>
+    </div> 
+            </div>
         </section>
-        
+
         <!-- Section 2 - Product Scene -->
         <section class="section2">
-            <img src="../../Images/Scenes/Aqara-Water.Leak.Sensor.T1-Scene.jpg" alt="Banner Image">
+                <img src="../../Images/Scenes/Aqara-Water.Leak.Sensor.T1-Scene.jpg" alt="Banner Image">
         </section>
 
         <!-- Section 3 - Product Info -->
-         <section class="section3" id="info">
+        <section class="section3" id="info">
             <div class="section3-content">
                 <h2>Product Info</h2>
-            <h3>Description</h3>
-            <p>The Aqara Water Leak Sensor T1 is a compact, reliable device designed to detect water leaks and help prevent costly water damage. This wireless sensor, compatible with Aqara's Zigbee 3.0 technology, can be placed in areas prone to leaks such as under sinks, near washing machines, and in basements. Upon detecting water, it instantly sends alerts via the Aqara Home app or compatible smart home platforms, enabling quick response to potential water hazards. The T1 model is also IP67-rated for dust and water resistance, ensuring durability even in humid environments, and it has a long-lasting battery life that provides low-maintenance, continuous monitoring.</p>
-                <h3>Key Features</h3>
-                <ul>
-                    <li><b>Triggers Alarm & Notifications:</b> Detects water leaks (0.5mm) and triggers the Aqara Hub alarm, sending push notifications to your phone.</li>
-                    <li><b>IP67 Waterproof & Dustproof:</b> Built to withstand humid and dusty environments with an IP67 rating.</li>
-                        <li><b>Compact & Flexible Placement:</b> Easy to place anywhere; coverage can be expanded with probe screws.</li>
-                            <li><b>Multi-Ecosystem Support:</b> Integrates with Aqara Hub, Apple Home (Critical Alerts), Samsung SmartThings, and Yandex Smart Home.</li>
-                                <li><b>Aqara Home Automations:</b> Customize smart home scenes, like triggering a smart plug to close a water valve when a leak is detected.</li>
-                                    <li><b>Energy-Efficient & Durable:</b> Anti-UV shell prevents discoloration, and battery lasts over 2 years with normal use.</li>
-                                        <li><b>OTA Updates:</b> Supports over-the-air updates, improving stability and functionality</li>
-                </ul>
-                <h3>Specifications</h3>
-            <table>
-                <tr><td>Category</td><td>Hub</td></tr>
-                <tr><td>Colour</td><td>White</td></tr>
-                <tr><td>Model</td><td>WL-S02D</td></tr>
-                    <tr><td>Battery</td><td>CR2032</td></tr>
+                    <h3>Description</h3>
+                    <p>Compact, sturdy and smart, the Water Leak Sensor T1 detects even the slightest moisture – as little as 0.5 mm – and immediately alerts you via the Aqara Home app or hub alarm, helping prevent costly water damage. Its IP67 rating ensures reliable performance in humid, dusty environments.</p><br>
+                    <p>Powered by a single CR2032 battery with up to two years' life and low-battery warnings, this sensor offers hassle-free, long-lasting protection. It uses Zigbee 3.0 for secure, low-power wireless connection—just pair it with your Aqara hub for seamless integration into Apple HomeKit, Google Assistant, Amazon Alexa, SmartThings, IFTTT and more.</p><br>
+                    <p>With its sleek, compact design, it's easy to place anywhere—from under sinks to laundry rooms—offering reliable water-leak monitoring at every critical spot.</p><br>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><b>Instant Alerts for Peace of Mind:</b> When water reaches just 0.5 mm, the Aqara Water Leak Sensor instantly triggers the Hub alarm and sends a push notification to your phone.</li>
+                        <li><b>Reliable in Any Environment:</b> With an IP67 dustproof and waterproof rating, the sensor is built to perform in humid or dusty spaces.</li>
+                        <li><b>Compact, Elegant Design:</b> Its sleek form allows it to fit discreetly anywhere you need protection.</li>
+                        <li><b>Smart Control with Apple Home:</b> Seamlessly works with other HomeKit-enabled devices via the Apple Home app, making everyday life easier.</li>
+                        <li><b>Aqara Home Automations:</b> Link with other Aqara products for tailored protection—for example, automatically shutting off a water valve through a Smart Plug the moment a leak is detected.*</li>
+                        <li><b>Energy-Efficient & Durable:</b> Made with anti-UV materials to resist discolouration, while its long-lasting battery provides up to two years of reliable use.</li>
+                        <li><b>OTA Updates:</b> Supports over-the-air updates, improving stability and functionality</li>
+                    </ul>
+                    <p id="additional-notes">
+                        Note:<br>
+                    * This scene requires a solenoid water valve and an Aqara Smart Plug.<br>
+                    </p>
+                    <h3>Specifications</h3>
+                    <table>
+                        <tr><td>Model</td><td>WL-S02D</td></tr>
+                        <tr><td>Colour</td><td>White</td></tr>
+                        <tr><td>Battery</td><td>CR2032</td></tr>
                         <tr><td>Wireless Protocol</td><td>Zigbee 3.0</td></tr>
-                            <tr><td>Dimensions</td><td>50 × 50 × 15 mm (1.97 × 1.97 × 0.59 in.)</td></tr>
-                                <tr><td>Operating Temperature</td><td>0 °C ~ 55 °C (14 °F ~ 131 °F)</td></tr>
-                                    <tr><td>Operating Humidity</td><td>0 – 100%RH</td></tr>
-                                        <tr><td>What's in the Box</td><td>Water Leak Sensor T1 × 1, User Manual × 1</td></tr>
-                <!-- Add more rows as needed -->
-            </table>
-            </div>
-         </section>
-
-         <!-- Section 4 - Product Images -->
-         <section class="section4" id="gallery">
-            <div class="section4-content">
-                <h2>Gallery</h2>
-                    <div class="gallery_table">
-                        <table>
-                            <tr>
-                                <td><img src="../../Images/Product_Images/Water_Leak_Sensor_T1.png" alt="Gallery Image 1"></td>
-                                <td><img src="../../Images/Product_Images/Water_Leak_Sensor_T1_Side.png" alt="Gallery Image 2"></td>
-                                <td><img src="../../Images/Product_Images/Water_Leak_Sensor_T1_Box_Art.png" alt="Gallery Image 3"></td>
-                            </tr>
-                            <tr>
-                                <td>Front Image</td>
-                                <td>Side Image</td>
-                                <td>Product Box</td>
-                            </tr>
-                        </table>
-                    </div>                 
-            </div>
+                        <tr><td>Dimensions</td><td>50 × 50 × 15 mm (1.97 × 1.97 × 0.59 in.)</td></tr>
+                        <tr><td>Operating Temperature</td><td>0 °C ~ 55 °C (14 °F ~ 131 °F)</td></tr>
+                        <tr><td>Operating Humidity</td><td>0 – 100%RH</td></tr>
+                        <tr><td>What's in the Box</td><td>Water Leak Sensor T1 × 1, User Manual × 1</td></tr>
+                        <!-- Add more rows as needed -->
+                    </table>
+                </div>
         </section>
-
         <!-- Section 5 - Automations-->
         <section class="section5" id="automations">
             <div class="section5-content">
                 <h2>Automations and Complementary Products</h2>
                 <p id="action-comment">Click a product image to go to its page details</p>
-                <!-- Automation #1 -->
-                <h3>Water Leak alert</h3>
-                <p>When the Aqara Water Leak Sensor detects a leak, it triggers an Aqara Smart Curtain to open or flashes Aqara Smart Lights to visually alert you. You will also receive notifications on the Aqara Home app.</p>
+                <!-- Automation #01 -->
+                <h3>Scene: Main Line Auto-Shutoff:</h3>
+                <p>Stop leaks at the source. The moment moisture is detected, your main valve closes, the hub sounds a siren, and you get an instant alert—before a drip becomes a disaster.</p>
                 <div class="responsive-table">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Required Automation Products:</td>
-                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1.png" alt="Water Leak Sensor"><p>Water Leak Sensor T1</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3_Front.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Ceiling_Light_T1M.html" target="_blank"><img src="../../Images/Product_Images/Ceiling_Light_T1M.png" alt="Ceiling Light T1M"><p>Ceiling Light T1M</p></a></td>
-                                <td><a href="Roller_Shade_Driver_E1.html" target="_blank"><img src="../../Images/Product_Images/Roller_Shade_Driver_E1_Front.png" alt="Roller Shade Driver"><p>Roller Shade Driver</p></a></td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Front.png" alt="Water Leak Sensor T1"><p>Water Leak Sensor T1</p></a></td>
+                                <td><a href="Valve_Controller_T1.html" target="_blank"><img src="../../Images/Product_Images/Valve_Controller_T1/Valve_Controller_T1_Angle.png" alt="Valve Controller T1"><p>Valve Controller T1</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="#"><img src="../../Images/Icons/00%20Generic%20Icons/General_Sensor.png" alt="Aqara Sensors" style="transform: scale(0.6); transform-origin: center; display: inline-block;"><p>Aqara Sensors</p></a></td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <!-- Automation #2 -->
-                <h3>Adjust environment if a leak is detected.</h3>
-                <p>When the Aqara Water Leak Sensor detects a leak, it adjusts the environment to minimize potential damage by reducing humidity levels or turning off the heating system.</p>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition): Water Leak Sensor T1 = “Leak detected” // THEN (Action): Close Valve Controller T1 (shut off water) AND Trigger hub siren / announcement AND Send push notification to phone // Execution Rule: Execute immediately, repeat if leak persists</p>
+                <!-- Automation #02 -->
+                <h3>Scene: Laundry Safe Mode</h3>
+                <p>A puddle under the washer? Power off instantly and ping your phone—no fried electronics, no soaked floor.</p>
                 <div class="responsive-table">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Required Automation Products:</td>
-                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1.png" alt="Water Leak Sensor"><p>Water Leak Sensor T1</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3_Front.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Temperature_and_Humidity_Sensor_T1.html" target="_blank"><img src="../../Images/Product_Images/Temperature_and_Humidity_Sensor_T1.png" alt="Temperature and Humidity Sensor"><p>Temperature and Humidity Sensor</p></a></td>
-                                <td><a href="#"><img src="../../Images/Icons/00 Generic Icons/4 IR_General.svg" alt="IR Control Unit" style="height: 70px;"><p>IR Enabled Heat Pump</p></a></td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Front.png" alt="Water Leak Sensor T1"><p>Water Leak Sensor T1</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="#" target="_blank"><img src="../../Images/Icons/00 Generic Icons/General_Controller.png" alt="Matter Enabled Smart Plug"><p>Matter Enabled Smart Plug</p></a></td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition): Water Leak Sensor T1 under washing machine = “Leak detected” // THEN (Action): Turn OFF Smart Plug (cuts power to washer) AND Send high-priority notification AND Play hub alarm // Execution Rule: Execute instantly; auto-resume requires manual check</p>
+                <!-- Automation #3 -->
+                <h3>Scene: Holiday Mode: Lights + Shutoff + Alert</h3>
+                <p>Away from home? If a leak is detected, kill the water, flash lights to alert anyone nearby, and message your phone—fully hands-off protection.</p>
+                <div class="responsive-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Required Automation Products:</td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Front.png" alt="Water Leak Sensor T1"><p>Water Leak Sensor T1</p></a></td>
+                                <td><a href="Valve_Controller_T1.html" target="_blank"><img src="../../Images/Product_Images/Valve_Controller_T1/Valve_Controller_T1_Angle.png" alt="Valve Controller T1"><p>Valve Controller T1</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="LED_Strip_T1.html" target="_blank"><img src="../../Images/Product_Images/LED_Strip_T1/LED_Strip_T1_Front.png" alt="LED Strip T1"><p>LED Strip T1</p></a></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition): Mode = “Away” AND Water Leak Sensor T1 = “Leak detected” // THEN (Action): Close Valve Controller T1 AND Blink light for 60s AND Send push notification AND (Optional) Play hub siren. // Execution Rule: Execute instantly; suppress repeat alerts for 5 minutes</p>
+                <!-- Automation #4 -->
+                <h3>Scene: Bathroom Flood Alert</h3>
+                <p>Protect your bathroom from unexpected leaks. Whether it’s an overflowing bath, a faulty tap, or a leaking toilet, the moment the Water Leak Sensor T1 detects moisture, you’ll get instant alerts, lights will flash, and the alarm will sound—stopping small leaks from becoming big headaches.</p>
+                <div class="responsive-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Required Automation Products:</td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Water_Leak_Sensor_T1/Water_Leak_Sensor_T1_Front.png" alt="Water Leak Sensor T1"><p>Water Leak Sensor T1</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="LED_Strip_T1.html" target="_blank"><img src="../../Images/Product_Images/LED_Strip_T1/LED_Strip_T1_Front.png" alt="LED Strip T1"><p>LED Strip T1</p></a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) - Water Leak Sensor T1 (placed near bathtub, shower, or toilet) = “Leak detected” // THEN (Action): Flash LED Strip Lights T1 red for high visibility AND Play hub alarm or custom voice alert AND Send push notification to phone // Execution Rule: Execute instantly; repeat every 2 minutes until cleared.</p>
+
             </div>
         </section>
 
@@ -167,9 +212,9 @@
             <div class="section6-content">
                 <h2>Product Support Documents</h2>
                     <ul>
-                        <li>Step by step installation instruction video:<br><a href="https://youtu.be/ATeGYHvC1Lc" target="_blank">Installation Video (00:02:36)</a></li>
-                        <li>Product User Manual:<br><a href="../../User_manuals/Aqara-Water.Leak.Sensor.T1_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
-                        <li>Product FAQs:<br><a href="../../FAQs/Aqara-Water.Leak.Sensor.T1-FAQ.pdf" target="_blank">Frequently Asked Questions (PDF)</a></li>
+                        <li>Step by step installation instruction video: <br><a href="https://youtu.be/ATeGYHvC1Lc" target="_blank">Installation Video (00:02:36)</a></li>
+                        <li>Product User Manual: <br><a href="../User_manuals/Aqara-Water.Leak.Sensor.T1_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
+                        <li>Product FAQs: <br><a href="../FAQs/Aqara-Water.Leak.Sensor.T1-FAQ.pdf" target="_blank">Frequently Asked Questions (PDF)</a></li>
                     </ul>
             </div>  
         </section>

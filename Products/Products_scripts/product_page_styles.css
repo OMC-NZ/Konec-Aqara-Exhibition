@@ -94,11 +94,11 @@ header .logo img {
 }
 
 /* Navigation */
-#main-menu {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
+  #main-menu {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+  }
 nav ul {
     list-style: none;
     justify-content: center;
@@ -368,38 +368,72 @@ nav ul li a:hover {
   }
   
   /* Features row styling */
-  .features-container {
-    margin: 2em 0;
-    width: 90%;
-    overflow: hidden;
-  }
-  
-  .features-scroll {
-    display: flex;
-    gap: 1em;
+.section1-content .responsive-table {
     width: 100%;
-  }
-  
-  .feature-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+}
+.section1 .responsive-table table {
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.section1 .responsive-table th,
+.section1 .responsive-table td {
+    border: 0;
     text-align: center;
-    min-width: 10px;
-  }
-  
-  .feature-item img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0.5em;
-  }
-  
-  .feature-item p {
-    margin: 0;
-    font-size: 1.2em;
-    font-weight: 200;
-    line-height: 1.3;
-  }
+    padding: 0 5px;
+    width: 10% ;
+    vertical-align: top;
+}
+.section1 .responsive-table td img {
+    max-width: 50px;
+    height: auto;
+}
+.section1 .responsive-table td p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 0.5em;
+}
+@media (max-width: 786px) {
+
+    .section1-content .responsive-table {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section1 .responsive-table table,
+    .section1 .responsive-table thead,
+    .section1 .responsive-table tbody,
+    .section1 .responsive-table th,
+    .section1 .responsive-table td,
+    .section1 .responsive-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .section1 .responsive-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .section1 .responsive-table th,
+    .section1 .responsive-table td {
+        width: calc(50% - 1px);
+        box-sizing: border-box;
+        padding: 10px 30px 20px 0px;
+    }
+
+    .section1 .responsive-table td img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 .responsive-table thead {
+        display: none;
+    }
+
+}
   
   /* Product Gallery */
   .product-gallery {
