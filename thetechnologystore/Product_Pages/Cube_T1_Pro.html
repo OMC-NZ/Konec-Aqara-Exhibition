@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqara - Cube T1 Pro</title>
+    <link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C600%7CSource%20Sans%20Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Product_scripts/product_styles.css">
+    <script src="Product_scripts/product_script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+<!-- <<<<<< HEADER >>>>>> -->
+        <header>
+            <div class="logo"><a href="javascript:void(0);" onclick="redirectToIndex()"><img src="../../Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a></div>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#info">Product Info</a></li>
+                    <li><a href="#automations">Automations</a></li>
+                    <li><a href="#support">Product Support</a></li>
+                </ul>
+                <div id="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+                <a href="javascript:void(0);" onclick="redirectToStore()" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
+        </header>
+
+<!-- <<<<< BODY >>>>> -->
+
+        <!-- Section 1 - Home -->
+        <section class="section1" id="home">
+            <div class="section1-content">
+                <div class="left">
+                    <div class="product-header">
+                    <h1>Cube T1 Pro</h1>
+                    </div>
+                        <!-- Available colours section -->
+                        <div class="available-colours">
+                            <span>Available colours:</span>
+                            <span class="colour-circle white" data-colour="White"></span>
+                        </div>
+                    <ul>
+                        <li>The Aqara Cube T1 Pro is a powerful and intuitive smart wireless controller designed to give you effortless control over your smart home. </li>
+                    </ul>
+                    <div class="responsive-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="../../Images/Icons/28 Cube T1 Pro/1 Ecosystem Support-White.svg" alt="icon_1"><p>Aqara & Multi Ecosystem Support</p></td>
+                                    <td><img src="../../Images/Icons/28 Cube T1 Pro/2 10-White.svg" alt="icon_2"><p>10 Actions in Scene Mode</p></td>
+                                    <td><img src="../../Images/Icons/28 Cube T1 Pro/3 Battery-White.svg" alt="icon_3"><p>Long Battery Life</p></td>
+                                    <td><img src="../../Images/Icons/28 Cube T1 Pro/4 Rotate-White.svg" alt="icon_4"><p>Supports Rotation Function</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+            <div class="product-gallery">
+                <div class="gallery-container">
+                    <img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Angle.png" alt="Cube T1 Pro Profile" class="active">
+                    <img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Side.png" alt="Cube T1 Pro Side">
+                    <img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Front.png" alt="Cube T1 Pro Front">
+                    <img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Box_Art.png" alt="Box Art">
+                    <!-- Navigation Arrows -->
+                    <button class="gallery-arrow prev" onclick="changeImage(-1)" aria-label="Previous image"></button>
+                    <button class="gallery-arrow next" onclick="changeImage(1)" aria-label="Next image"></button>
+                </div>
+                <div class="gallery-nav">
+                    <span class="gallery-dot active" data-index="0" onclick="showImage(0)"></span>
+                    <span class="gallery-dot" data-index="1" onclick="showImage(1)"></span>
+                    <span class="gallery-dot" data-index="2" onclick="showImage(2)"></span>
+                    <span class="gallery-dot" data-index="3" onclick="showImage(3)"></span>
+                </div>
+            </div>
+    </div> 
+            </div>
+        </section>
+        
+        <!-- Section 2 - Product Scene -->
+        <section class="section2">
+            <img src="../../Images/Scenes/Aqara-Cube.T1-Scene.jpg" alt="Banner Image">
+        </section>
+
+        <!-- Section 3 - Product Info -->
+        <section class="section3" id="info">
+            <div class="section3-content">
+                <h2>Product Info</h2>
+                    <h3>Description</h3>
+                    <p>The Aqara Cube T1 Pro is a powerful and intuitive smart wireless controller designed to give you effortless control over your smart home.</p><br>
+                    <p>Building on the charm of the original Cube, the T1 Pro brings a fresh and simplified experience—no need to remember multiple gestures. Instead, each of its six sides can be assigned to control different scenes or devices, making it easier than ever to interact with your home.</p><br>
+                    <p>Whether you're turning off the lights, activating a movie mode, or adjusting the temperature, the Cube T1 Pro puts seamless control in the palm of your hand.</p><br>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><b>Zigbee 3.0 Built-In: </b>Experience lightning-fast, ultra-reliable performance with Zigbee 3.0—the gold standard for smart home tech. Enjoy better compatibility, longer support, and smarter energy use, all in one powerful protocol.1</li>
+                        <li><b>Supercharged Compatibility: </b>Whether you're team Apple, Amazon, or somewhere in between, the Cube T1 Pro has you covered. With the new Scene Mode, it's now HomeKit-ready and prepped for Matter* once it’s fully rolled out. It also plays nicely with Alexa, IFTTT, and more!</li>
+                        <li><b>Smarter Scene Control: </b>Get creative with Scene Mode: assign each cube face to a different device or scene! Clear dice-style markers help you instantly recognise which face does what—making control effortless and fun.</li>
+                        <li><b>Choose your mode: </b>Switch to Action Mode to recreate the classic gestures—now powered by Zigbee 3.0 for faster, smarter performance.</li>
+                        <li><b>Battery That Lasts for Years: </b>No more constant battery swaps. With its ultra-low energy design, the Cube T1 Pro keeps going for up to 2 years—eco-friendly and worry-free.</li>
+                        <li><b>Twist to Control*: </b>A simple twist of the cube lets you fine-tune your lights or curtains. Adjust brightness, temperature, or even curtain position with a spin—customise everything in the Aqara Home app.</li>
+                        <li><b>Always Getting Smarter: </b>Stay ahead with over-the-air (OTA) updates. New features, improvements, and fixes come straight to your cube—no need to buy the next model.</li>
+                    </ul>
+                    <p id="additional-notes">
+                        Note:<br>
+                        * Compatible Aqara devices are required.<br>
+                    </p>
+                    <h3>Specifications</h3>
+                    <table>
+                <tr><td>Model</td><td>CTP-R01</td></tr>
+                <tr><td>Colour</td><td>White</td></tr>
+                <tr><td>Dimensions</td><td>45×45×45 mm (1.77×1.77×1.77 in.)</td></tr>
+                <tr><td>Net Weight</td><td>76g</td></tr>
+                <tr><td>Battery</td><td>CR2450 (Replaceable)</td></tr>
+                <tr><td>Wireless Protocol</td><td>Zigbee</td></tr>
+                <tr><td>Operating Temperature</td><td>-10°C ~ 50°C (14°F ~ 122°F)</td></tr>
+                <tr><td>Operating Humidity</td><td> ≤ 95% RH, no condensation</td></tr>
+                <tr><td>Zigbee Operation Frequency</td><td>2400-2483.5MHz</td></tr>
+                <tr><td>Zigbee Maximum Output Power</td><td> ≤ 13 dBm</td></tr>
+                <tr><td>What is in the Box</td><td>Cube T1 Pro × 1, Ejector Tool × 1, User Manual ×1</td></tr>
+                    </table>
+                </div>
+        </section>
+        <!-- Section 5 - Automations-->
+        <section class="section5" id="automations">
+            <div class="section5-content">
+                <h2>Automations and Complementary Products</h2>
+                <p id="action-comment">Click a product image to go to its page details</p>
+                <!-- Automation #01 -->
+                <h3>Scene: Flip It to Light Up Your Home</h3>
+                <p>Flip the cube to side 2 and rotate to adjust your ceiling light’s brightness. Flip to side 3 and rotate again to control your curtain’s position—it’s that easy!</p>
+                <div class="responsive-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Required Automation Products:</td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Angle.png" alt="Cube T1 Pro"><p>Cube T1 Pro</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="LED_Bulb_T2.html"><img src="../../Images/Product_Images/LED_Bulb_T2/LED_Bulb_T2_RGB_CCT_E27_Front.png" alt="LED Bulb T2"><p>LED Bulb T2</p></a></td>
+                                <td><a href="Curtain_Driver_E1.html" target="_blank"><img src="../../Images/Product_Images/Curtain_Driver_E1/Curtain_Driver_E1_Profile.png" alt="Curtain Driver E1"><p>Curtain Driver E1</p></a></td>                               
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) – Cube T1 Pro is flipped to side 2 // THEN (Action) – rotate to adjust LED bulb brightness</p>
+                 <p>IF (Condition) – Cube T1 Pro is flipped to side 3 // THEN (Action) – rotate to control curtain position</p>
+                <!-- Automation #02 -->
+                <h3>Scene: Camera Control in the Coolest Way</h3>
+                <p>Pair with the Camera Hub G3 and flip to switch between Face and Gesture Recognition, turn on Privacy Mode, or move the camera—all with a flick. No extra hub needed!</p>
+                <div class="responsive-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Required Automation Products:</td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Angle.png" alt="Cube T1 Pro"><p>Cube T1 Pro</p></a></td>
+                                <td><a href="Camera_Hub_G3.html" target="_blank"><img src="../../Images/Product_Images/Camera_Hub_G3/Camera_Hub_G3_Profile.png" alt="Camera Hub G3"><p>Camera Hub G3</p></a></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) - Cube T1 Pro is flipped to side 1 // THEN (Action) - toggle Face / Gesture Recognition</p>
+                <p>IF (Condition) - Cube T1 Pro is flipped to side 2 // THEN (Action) - toggle Face / enable Privacy Mode</p>
+                <p>IF (Condition) - Cube T1 Pro is flipped to side 3 // THEN (Action) - toggle Face / adjust camera position</p>
+
+                <!-- Automation #3 -->
+                <h3>Scene: Shake to Command Your Shades</h3>
+                <p>Just one action does it all. Shake once to open your roller shades, again to stop at the perfect spot, and once more to close them. Simple, seamless, satisfying.</p>
+                <div class="responsive-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Required Automation Products:</td>
+                                <td><a href="#"><img src="../../Images/Product_Images/Cube_T1_Pro/Cube_T1_Pro_Angle.png" alt="Cube T1 Pro"><p>Cube T1 Pro</p></a></td>
+                                <td><a href="Hub_M3.html" target="_blank"><img src="../../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="Roller_Shade_Driver_E1.html" target="_blank"><img src="../../Images/Product_Images/Roller_Shade_Driver_E1/Roller_Shade_Driver_E1_Profile.png" alt="Roller Shade Driver E1"><p>Roller Shade Driver E1</p></a></td>
+                                <td><a href="Curtain_Driver_E1.html" target="_blank"><img src="../../Images/Product_Images/Curtain_Driver_E1/Curtain_Driver_E1_Profile.png" alt="Curtain Driver E1"><p>Curtain Driver E1</p></a></td>                               
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><b>Automation Setup</b></p>
+                <p>IF (Condition) - Cube T1 Pro is shaken once // THEN (Action) - Open roller shades</p>
+                <p>IF (Condition) - Cube T1 Pro is shaken twice // THEN (Action) - stop shades at current position</p>
+                <p>IF (Condition) - Cube T1 Pro is shaken three times // THEN (Action) - close roller shades</p>
+            </div>
+        </section>
+
+        <!-- Section 6 - Product Support -->
+        <section class="section6" id="support">
+            <div class="section6-content">
+                <h2>Product Support Documents</h2>
+                    <ul>
+                        <li>Step by step installation instruction video: <br> <a href="https://youtu.be/EglydRply28" target="_blank">Installation Video (00:06:40)</a></li>
+                        <li>Product User Manual: <br> <a href="../../User_manuals/Aqara-Cube.Pro.T1_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
+                        <li>Product FAQs: <br><a href="../../FAQs/Aqara-Cube.Pro.T1-FAQ.pdf" target="_blank">Frequently Asked Questions  (PDF)</a></li>
+                    </ul>
+            </div>  
+        </section>
+        <!-- Section 7 - Footer-->
+         <section class="section7">
+            <div class="section7-content">
+                <h1>Aqara - Continuous Connection</h1>
+            </div>
+         </section>
+
+    </main>
+  </body>
+</html>
