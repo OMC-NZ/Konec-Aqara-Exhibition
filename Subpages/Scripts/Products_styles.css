@@ -342,7 +342,7 @@ nav ul li a:hover {
 }
 
 .category-section {
-    padding: 2rem 0;
+    padding: 2rem 6rem;
     padding-top: calc(1em + 35px);
     background-color: #FFFFFF;
 }
@@ -553,7 +553,7 @@ a:any-link {
 }
 @media (max-width: 600px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     
     .products-banner {

@@ -6,16 +6,8 @@
     <title>Aqara - Smart Lock U100</title>
     <link rel="icon" href="../Images/Icons/Favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3A400%2C600%7CSource%20Sans%20Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Products_scripts/product_page_styles.css">
-    <script src="Products_scripts/product__page_script.js" defer></script>
-
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "t3mwosyblz");
-</script>
+    <link rel="stylesheet" href="Product_scripts/product_styles.css">
+    <script src="Product_scripts/product_script.js" defer></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVLM69S1B6"></script>
@@ -26,101 +18,94 @@
 
   gtag('config', 'G-DVLM69S1B6');
 </script>
-</head>
 
+</head>
 <body>
     <main class="container">
 <!-- <<<<<< HEADER >>>>>> -->
-<header>
-    <div class="logo"><a href="../index.html"><img src="../Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a></div>
-    <nav id="main-menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Subpages/About.html">About</a></li>
-            <li><a href="../Subpages/Products.html">Products</a></li>
-            <li><a href="../Subpages/Stores.html">Stores</a></li>
-            <li><a href="../Subpages/Support.html">Support</a></li>
-        </ul>
-        <a href="../Subpages/Stores.html" class="buy-now-link">
-            <button class="buy-now-btn">Buy Now</button>
-        </a>
-        <div id="hamburger-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-</header>
+        <header>
+            <div class="logo"><a href="../index.html"><img src="../Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a></div>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Subpages/About.html">About</a></li>
+                    <li><a href="../Subpages/Products.html">Products</a></li>
+                    <li><a href="../Subpages/Stores.html">Stores</a></li>
+                    <li><a href="../Subpages/Support.html">Support</a></li>
+
+                </ul>
+                <div id="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+                <a href="../Subpages/Stores.html" class="buy-now-link"><button class="buy-now-btn">Buy Now</button></a>
+        </header>
 
 <!-- <<<<< BODY >>>>> -->
 
-<!-- Section 1 - Home -->
-<section class="section1" id="home">
-    <div class="section1-content">
-      <div class="left">
-        <h1>Smart Lock U100</h1>
-        <p class="product-description">Aqara U100 Smart Lock offers secure, BHMA-certified access with Apple Home Key, fingerprint, keypad & more. Auto-lock, IP65 waterproof, & 8-month battery life.</p>
-        
-            <div class="responsive-table">
-                <table>
-                    <tbody>
-                        <tr>
+        <!-- Section 1 - Home -->
+        <section class="section1" id="home">
+            <div class="section1-content">
+                <div class="left">
+                    <div class="product-header">
+                    <h1>Smart Lock U100</h1>
+                    </div>
+                        <!-- Available colours section -->
+                        <div class="available-colours">
+                            <span>Available colours:</span>
+                            <span class="colour-circle silver" data-colour="Silver"></span>
+                        </div>
+                    <ul>
+                        <li>Aqara U100 Smart Lock offers secure, BHMA-certified access with Apple Home Key, fingerprint, keypad & more. Auto-lock, IP65 waterproof, & 8-month battery life.</li>
+                    </ul>
+                    <div class="responsive-table">
+                        <table>
+                            <tbody>
+                                <tr>
                                     <td><img src="../Images/Icons/03 Lock U100/2 Fingerprint-White.svg" alt="icon_1"><p>Built-In Fingerprint Reader</p></td>
                                     <td><img src="../Images/Icons/03 Lock U100/2 NFC-White.svg" alt="icon_2"><p>NFC and Apple Home Key Support</p></td>
                                     <td><img src="../Images/Icons/03 Lock U100/3 Battery-White.svg" alt="icon_3"><p>Up to 8 months of Battery Life</p></td>
                                     <td><img src="../Images/Icons/03 Lock U100/4 AES Encryption-White.svg" alt="icon_4"><p>AES Encryption and BHMA Verification</p></td>
                                     <td><img src="../Images/Icons/03 Lock U100/5 Remote-White.svg" alt="icon_5"><p>Remote Passwords and Unlock</p></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-      
-      <div class="right">
-        <div class="product-gallery">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="right">
+            <div class="product-gallery">
                 <div class="gallery-container">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Dual.png" alt="Smart Lock U100 Dual View" class="active">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Front.png" alt="Smart Lock U100 Outer Front View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Side.png" alt="Smart Lock U100 Outer Side View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Bottom.png" alt="Smart Lock U100 Outer Bottom View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Front.png" alt="Smart Lock U100 Inner Front View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Side.png" alt="Smart Lock U100 Inner Side View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Bottom.png" alt="Smart Lock U100 Inner Bottom View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Back.png" alt="Smart Lock U100 Inner Back View">
-                    <img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Box_Art.png" alt="Box Art">
+                    <!-- Silver Set Default-->
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Dual.png" alt="Smart Lock U100 Dual View" class="active">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Front.png" alt="Smart Lock U100 Outer Front View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Side.png" alt="Smart Lock U100 Outer Side View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Outer_Bottom.png" alt="Smart Lock U100 Outer Bottom View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Front.png" alt="Smart Lock U100 Inner Front View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Side.png" alt="Smart Lock U100 Inner Side View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Bottom.png" alt="Smart Lock U100 Inner Bottom View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Inner_Back.png" alt="Smart Lock U100 Inner Back View">
+                    <img data-colour="Silver" src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Box_Art.png" alt="Box Art">
+
                     <!-- Navigation Arrows -->
                     <button class="gallery-arrow prev" onclick="changeImage(-1)" aria-label="Previous image"></button>
                     <button class="gallery-arrow next" onclick="changeImage(1)" aria-label="Next image"></button>
                 </div>
-                
                 <div class="gallery-nav">
-                    <span class="gallery-dot active" data-index="0" onclick="showImage(0)"></span>
-                    <span class="gallery-dot" data-index="1" onclick="showImage(1)"></span>
-                    <span class="gallery-dot" data-index="2" onclick="showImage(2)"></span>
-                    <span class="gallery-dot" data-index="3" onclick="showImage(3)"></span>
-                    <span class="gallery-dot" data-index="4" onclick="showImage(4)"></span>
-                    <span class="gallery-dot" data-index="5" onclick="showImage(5)"></span>
-                    <span class="gallery-dot" data-index="6" onclick="showImage(6)"></span>
-                    <span class="gallery-dot" data-index="7" onclick="showImage(7)"></span>
-                    <span class="gallery-dot" data-index="8" onclick="showImage(8)"></span>
-
                 </div>
-        </div>
-      </div>          
-    </div>
-  </section>
-
-
-
+            </div>
+    </div> 
+            </div>
+        </section>
+        
         <!-- Section 2 - Product Scene -->
         <section class="section2">
-            <div class="section2-content">
             <img src="../Images/Scenes/Aqara-Smart.Lock.U100-Scene.jpg" alt="Banner Image">
         </section>
 
         <!-- Section 3 - Product Info -->
-         <section class="section3" id="info">
+        <section class="section3" id="info">
             <div class="section3-content">
                 <h2>Product Info</h2>
                     <h3>Description</h3>
@@ -147,7 +132,7 @@
                         <tr><td>Colour</td><td>Shadow Grey</td></tr>
                         <tr><td>Model</td><td>DL-D01D</td></tr>
                         <tr><td>Wireless Protocols</td><td>Zigbee 3.0 IEEE 802.15.4</td></tr>
-                        <tr><td>Dimensions</td><td>Inner 140.2 × 76.2 × 29 mm (5.51 × 3 × 1.14 in.)<br>Outer 134.2 × 73.2 × 81.4 mm (5.28 × 2.88 × 3.2 in.)</td></tr>
+                        <tr><td>Dimensions</td><td>Inner 140.2 x 76.2 x 29 mm (5.51 x 3 x 1.14 in.)<br>Outer 134.2 x 73.2 x 81.4 mm (5.28 X 2.88 x 3.2 in.)</td></tr>
                         <tr><td>Voice Language</td><td>Chinese, English, French, Spanish (Default: English)</td></tr>
                         <tr><td>Battery</td><td>4 AA batteries (8 daily unlocks and auto-locks, &gt; 8 months)</td></tr>
                         <tr><td>Emergency Power Supply</td><td>Type C external power supply, 5V DC</td></tr>
@@ -160,12 +145,11 @@
                         <tr><td>Door Gap Compatibility</td><td>2 mm – 10 mm</td></tr>
                         <tr><td>BLE</td><td>Standard: Bluetooth 5.0<br>Communication distance: Over 20 meters in open areas</td></tr>
                         <tr><td>Zigbee</td><td>Standard: Zigbee 3.0<br>Communication distance: Over 20 meters indoors</td></tr>
-                        <tr><td>What is in the Box</td><td>Smart Lock U100 × 1, User Manual × 1, Installation Diagram × 1, Key × 2, AA Battery × 4, Knob Removal Tool × 1, Opposite-Pull Screw Kit × 1, Bolt & Strike Plate Screw Kit × 1, Mounting Plate Screw Kit × 1, Aqara E1 Hub× 1, NFC Card × 2</td></tr>
+                        <tr><td>What is in the Box</td><td>Smart Lock U100 x1, User Manual x1, Installation Diagram x1, Key x2, AA Battery x4, Knob Removal Tool x1, Opposite-Pull Screw Kit x1, Bolt & Strike Plate Screw Kit x1, Mounting Plate Screw Kit x1, Aqara E1 Hub x1, NFC Card x2</td></tr>
                         <!-- Add more rows as needed -->
                     </table>
-            </div>
-         </section>
-
+                </div>
+        </section>
         <!-- Section 5 - Automations-->
         <section class="section5" id="automations">
             <div class="section5-content">
@@ -180,8 +164,8 @@
                             <tr>
                                 <td>Required Products:</td>
                                 <td><a href="#"><img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Dual.png" alt="Smart Lock U100"><p>Smart Lock U100</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Doorbell_G4.html" target="_blank"><img src="../Images/Product_Images/Doorbell_G4/Doorbell_G4_Front.png" alt="Video Doorbell G4"><p>Video Doorbell G4</p></a></td>
+                                <td><a href="Hub_M3.html"><img src="../Images/Product_Images/Hub_M3/Hub_M3_profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="Doorbell_G4.html"><img src="../Images/Product_Images/Doorbell_G4/Doorbell_G4_Front.png" alt="Video Doorbell G4"><p>Video Doorbell G4</p></a></td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
@@ -197,9 +181,9 @@
                             <tr>
                                 <td>Required Products:</td>
                                 <td><a href="#"><img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Dual.png" alt="Smart Lock U100"><p>Smart Lock U100</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Ceiling_Light_T1M.html" target="_blank"><img src="../Images/Product_Images/Ceiling_Light_T1M/Ceiling_light_T1M_Lit.png" alt="Ceiling Light T1M"><p>Ceiling Light T1M</p></a></td>
-                                <td><a href="#"><img src="../Images/Icons/00%20Generic%20Icons/Smart_Speaker.png" alt="Smart Speaker" style="transform: scale(0.6); transform-origin: center; display: inline-block;"><p>Smart Speaker</p></a></td>
+                                <td><a href="Hub_M3.html"><img src="../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="Ceiling_Light_T1M.html"><img src="../Images/Product_Images/Ceiling_Light_T1M/Ceiling_light_T1M_Lit.png" alt="Ceiling Light T1M"><p>Ceiling Light T1M</p></a></td>
+                                <td><a href="#"><img src="../Images/Icons/00%20Generic%20Icons/Smart_Speaker.png" alt="Smart Speaker" class="sensor-icon"><p>Smart Speaker</p></a></td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
@@ -208,19 +192,19 @@
                 <p><b>Automation Setup</b></p>
                 <p>IF (Condition) – Person 1 unlocks the door // THEN (Action) – Cool ceiling light ON, AC set to 18°C</p>
                 <p>IF (Condition) – Person 2 unlocks the door // THEN (Action) – Warm pendant light ON, AC set to 24°C, and music starts playing</p>
-                                  <!-- Automation #3 -->
+                 <!-- Automation #3 -->
                 <h3>Scene: The Ultimate Seamless Homecoming</h3>
-                <p>Walk into comfort the moment you arrive home. As soon as you unlock your Aqara U200 Smart Lock, your home springs to life — curtains glide open, lights turn on, and your perfect atmosphere awaits. A truly hands-free, smarter living experience designed to make every homecoming effortless.</p>
+                <p>Walk into comfort the moment you arrive home. As soon as you unlock your Aqara U100 Smart Lock, your home springs to life — curtains glide open, lights turn on, and your perfect atmosphere awaits. A truly hands-free, smarter living experience designed to make every homecoming effortless.</p>
                 <div class="responsive-table">
                     <table>
                         <tbody>
                             <tr>
                                 <td>Required Products:</td>
                                 <td><a href="#"><img src="../Images/Product_Images/Smart_Lock_U100/Smart_Lock_U100_Dual.png" alt="Smart Lock U100"><p>Smart Lock U100</p></a></td>
-                                <td><a href="Hub_M3.html" target="_blank"><img src="../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
-                                <td><a href="Ceiling_Light_T1M.html" target="_blank"><img src="../Images/Product_Images/LED_Bulb_T2/LED_Bulb_T2_RGB_CCT_E27_Front.png" alt="LED Bulb T2"><p>LED Bulb T2</p></a></td>
-                                <td><a href="Roller_Shade_Driver_E1.html" target="_blank"><img src="../Images/Product_Images/Roller_Shade_Driver_E1/Roller_Shade_Driver_E1_Profile.png" alt="Roller Shade Driver E1"><p>Roller Shade Driver E1</p></a></td>
-                                <td><a href="Curtain_Driver_E1.html" target="_blank"><img src="../Images/Product_Images/Curtain_Driver_E1/Curtain_Driver_E1_Profile.png" alt="Curtain Driver E1"><p>Curtain Driver E1</p></a></td>
+                                <td><a href="Hub_M3.html"><img src="../Images/Product_Images/Hub_M3/Hub_M3_Profile.png" alt="Hub M3"><p>Hub M3</p></a></td>
+                                <td><a href="Ceiling_Light_T1M.html"><img src="../Images/Product_Images/LED_Bulb_T2/LED_Bulb_T2_RGB_CCT_E27_Front.png" alt="LED Bulb T2"><p>LED Bulb T2</p></a></td>
+                                <td><a href="Roller_Shade_Driver_E1.html"><img src="../Images/Product_Images/Roller_Shade_Driver_E1/Roller_Shade_Driver_E1_Profile.png" alt="Roller Shade Driver E1"><p>Roller Shade Driver E1</p></a></td>
+                                <td><a href="Curtain_Driver_E1.html"><img src="../Images/Product_Images/Curtain_Driver_E1/Curtain_Driver_E1_Profile.png" alt="Curtain Driver E1"><p>Curtain Driver E1</p></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -229,25 +213,23 @@
                 <p>IF (Condition) – Person 1 unlocks the door // THEN (Action) – Cool ceiling light ON, AC set to 18°C</p>
                 <p>IF (Condition) – Person 2 unlocks the door // THEN (Action) – Warm pendant light ON, AC set to 24°C, and music starts playing</p>
 
-
             </div>
         </section>
-
         <!-- Section 6 - Product Support -->
         <section class="section6" id="support">
             <div class="section6-content">
                 <h2>Product Support Documents</h2>
                     <ul>
-                        <li>Step by step installation instruction video: <br><a href="https://youtu.be/gcnOwWGuLiQ" target="_blank">Installation Video (00:07:36)</a></li>
+                        <li>Step by step installation instruction video: <br><a href="https://youtu.be/gcnOwWGuLiQ" target="_blank" rel="noopener">Installation Video (00:07:36)</a></li>
                         <li>Product User Manual: <br><a href="../User_manuals/Aqara-Smart.Lock.U100_User.Manual.pdf" target="_blank">User Manual (PDF)</a></li>
                         <li>Product FAQs: <br><a href="../FAQs/Aqara-Smart.Lock.U100-FAQ.pdf" target="_blank">Frequently Asked Questions (PDF)</a></li>
                     </ul>
             </div>  
         </section>
-        <!--- Footer-->
-        <section class="footer">
+        <!-- Section 7 - Footer-->
+         <section class="footer">
             <div class="footer-container">
-                <div class="footer-logo"><a href="index.html"><img src="../Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a>                    
+                <div class="footer-logo"><a href="../index.html"><img src="../Images/Icons/Aqara_Logo_White.png" alt="Aqara Logo"></a>                    
                 </div>
                     
                 <div class="footer-links">
@@ -266,14 +248,15 @@
                     <div class="footer-column">
                         <h3>Follow us</h3>
                         <ul>
-                            <li><a href="https://www.facebook.com/AqaraNewZealand">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/aqara_nz">Instagram</a></li>
-                            <li><a href="https://www.youtube.com/@AqarahomeNZ">Youtube</a></li>
+                            <li><a href="https://www.facebook.com/AqaraNewZealand" target="_blank" rel="noopener">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/aqara_nz" target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/@AqarahomeNZ" target="_blank" rel="noopener">Youtube</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+         </section>
+
     </main>
   </body>
 </html>
