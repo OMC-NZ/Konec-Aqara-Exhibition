@@ -341,11 +341,11 @@ a.buy-now-link {
     border: 0;
     text-align: center;
     padding: 0 5px;
-    width: 180px ;
+    width: 160px ;
     vertical-align: top;
 }
 .section1 .responsive-table td img {
-    max-width: 50px;
+    max-width: 55px;
     height: auto;
 }
 .section1 .responsive-table td p {
@@ -479,8 +479,9 @@ a.buy-now-link {
   font-size: 20px;
   transition: all 0.3s ease;
   z-index: 10;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
+
 }
 
 .gallery-arrow:hover {
@@ -915,6 +916,13 @@ a.buy-now-link {
     max-height: 100px;
     width: auto;
 }
+
+.section5 .responsive-table td img.sensor-icon {
+    max-height: 50px;
+    transform-origin: center;
+    display: inline-block;    
+}
+
 .section5 .responsive-table td p {
     font-size: 1rem;
     padding: 0.5em 2em 0.5em 2em;
