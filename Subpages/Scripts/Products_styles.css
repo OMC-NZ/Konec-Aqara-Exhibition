@@ -527,6 +527,7 @@ a:any-link {
         .category-section {
     padding: 2rem 0rem;
 }
+}
 
 @media (max-width: 800px) {
     .product-grid {
