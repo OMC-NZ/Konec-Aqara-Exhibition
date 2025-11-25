@@ -315,7 +315,7 @@ a.buy-now-link {
     object-fit: contain;
 }
 .section1-content h1{
-    margin: 0 0 0.5em 1.25em;
+    margin: 0 0 0 1.25em;
     font-weight: 400;
     font-size: 3rem;
 }
@@ -375,9 +375,10 @@ a.buy-now-link {
     display: flex;
     width: 90%;
     align-items: center;  /* vertically center H1 and colours */
-    gap: 20px;            /* space between H1 and colours */
+    gap: 10px;            /* space between H1 and colours */
 }
 
+/* ----- Available Colours ----- */
 .available-colours {
     margin: 0px 0 20px 65px;
     display: flex;
@@ -435,6 +436,7 @@ a.buy-now-link {
     );
 }
 
+
 /* Tooltip on hover */
 .colour-circle::after {
     content: attr(data-colour);
@@ -472,6 +474,40 @@ a.buy-now-link {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* ----- Available Config ----- */
+.available-configurations {
+    margin: 15px 0;
+    margin-left: 4em;
+}
+
+.available-configurations span:first-child {
+    font-weight: 600;
+    margin-right: 15px;
+}
+.config-option {
+    align-items: center;
+    display: inline-block;
+    gap: 10px;
+    padding: 7px 14px;
+    margin: 5px 8px 5px 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.config-option:hover {
+    border-color: #d3d3d3;
+    background-color: #d3d3d3;
+}
+
+.config-option.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
 
 /* Product Gallery */
   .product-gallery {

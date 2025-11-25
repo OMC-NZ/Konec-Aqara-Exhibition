@@ -1,11 +1,10 @@
 /* Full site JS - replace the existing JS with this block
    - Keeps redirect, menu, smooth scroll behaviors
-   - Replaces & standardises gallery logic (colour-aware, per-gallery)
+   - Replaces & standardises gallery logic (colour + configuration aware, per-gallery)
 */
 
 (function () {
   // ---------- Utility / Site functions (exposed globally for HTML hooks) ----------
-
 
   window.toggleMenu = function () {
     const menu = document.querySelector('nav ul');
@@ -84,11 +83,16 @@
       // All images originally in the gallery container (keeps DOM order)
       const allImages = Array.from(galleryContainer.querySelectorAll('img'));
 
-      // Find colour circles that are "related" to this gallery:
-      const scope = productGallery.closest('.section1-content') || productGallery.closest('section') || document;
-      const colourCircles = Array.from(scope.querySelectorAll('.available-colours .colour-circle'));
+      // Find colour circles & configuration options that are "related" to this gallery:
+      const scope =
+        productGallery.closest('.section1-content') ||
+        productGallery.closest('section') ||
+        document;
 
-      // Build a mapping of colour -> array of images (in DOM order)
+      const colourCircles = Array.from(scope.querySelectorAll('.available-colours .colour-circle'));
+      const configOptions = Array.from(scope.querySelectorAll('.available-configurations .config-option'));
+
+      // Build a mapping of colour -> array of images (keeps DOM order)
       const colourMap = {};
       allImages.forEach(img => {
         const c = img.dataset.colour || 'default';
@@ -103,17 +107,36 @@
         galleryNav,
         allImages,
         colourCircles,
+        configOptions,
         colourMap,
         currentColour: null,
+        currentConfig: null,
         currentIndex: 0,
 
-        // Return array of images for currentColour (or all images if null)
+        // Return array of images for currentColour/currentConfig combination
         getActiveImages() {
-          if (!this.currentColour) {
-            // if no explicit colour, treat all images with display != 'none' as active
-            return this.allImages.filter(img => img.style.display !== 'none');
+          const hasColour = !!this.currentColour;
+          const hasConfig = !!this.currentConfig;
+
+          let filtered = this.allImages.filter(img => {
+            if (hasColour && img.dataset.colour !== this.currentColour) return false;
+            if (hasConfig && img.dataset.config !== this.currentConfig) return false;
+            return true;
+          });
+
+          // Fallbacks if no images match the strict combination
+          if (!filtered.length) {
+            if (hasColour && !hasConfig) {
+              filtered = this.allImages.filter(img => img.dataset.colour === this.currentColour);
+            } else if (hasConfig && !hasColour) {
+              filtered = this.allImages.filter(img => img.dataset.config === this.currentConfig);
+            } else {
+              filtered = this.allImages;
+            }
           }
-          return this.colourMap[this.currentColour] ? Array.from(this.colourMap[this.currentColour]) : [];
+
+          // If still nothing (no images at all) just return []
+          return filtered;
         },
 
         // Rebuild the dot controls to match the active image set
@@ -149,6 +172,22 @@
           });
         },
 
+        // Centralised helper: apply currentColour/currentConfig to image visibility + dots
+        updateVisibility() {
+          const activeImages = this.getActiveImages();
+          const activeSet = new Set(activeImages);
+
+          this.allImages.forEach(img => {
+            const visible = activeSet.has(img);
+            img.style.display = visible ? '' : 'none';
+            img.classList.remove('active');
+          });
+
+          this.rebuildDots();
+          this.currentIndex = 0;
+          this.showImage(0);
+        },
+
         // Display the image at index within the active images
         showImage(index) {
           const activeImages = this.getActiveImages();
@@ -158,7 +197,7 @@
           if (index < 0) index = activeImages.length - 1;
           if (index >= activeImages.length) index = 0;
 
-          // Remove 'active' from all images (keeps other colours unaffected)
+          // Remove 'active' from all images (keeps other colours/configs unaffected)
           this.allImages.forEach(img => img.classList.remove('active'));
 
           // Set 'active' on the target image (visible)
@@ -181,32 +220,32 @@
           this.showImage(this.currentIndex + direction);
         },
 
-        // Set/Change the active colour, show/hide images accordingly, rebuild dots
+        // Set/Change the active colour
         setColour(colour) {
-          this.currentColour = colour == null ? null : String(colour);
+          this.currentColour = (colour == null || colour === 'default') ? null : String(colour);
 
-          if (this.currentColour === null) {
-            // show all images
-            this.allImages.forEach(img => {
-              img.style.display = '';
-              img.classList.remove('active');
-            });
-          } else {
-            // show only the images matching the colour (rest hidden)
-            this.allImages.forEach(img => {
-              if (img.dataset.colour === this.currentColour) {
-                img.style.display = '';
-              } else {
-                img.style.display = 'none';
-              }
-              img.classList.remove('active');
-            });
+          // update visual state of colour circles
+          if (this.colourCircles && this.colourCircles.length > 0) {
+            this.colourCircles.forEach(c =>
+              c.classList.toggle('selected', c.dataset.colour === this.currentColour)
+            );
           }
 
-          // rebuild dots and reset to first image in set
-          this.rebuildDots();
-          this.currentIndex = 0;
-          this.showImage(0);
+          this.updateVisibility();
+        },
+
+        // Set/Change the active configuration
+        setConfig(config) {
+          this.currentConfig = config == null ? null : String(config);
+
+          // update visual state of config options
+          if (this.configOptions && this.configOptions.length > 0) {
+            this.configOptions.forEach(o =>
+              o.classList.toggle('active', o.dataset.config === this.currentConfig)
+            );
+          }
+
+          this.updateVisibility();
         },
 
         // Initialise manager
@@ -235,10 +274,18 @@
             this.colourCircles.forEach(circle => {
               // preserve tooltip behaviour; add selection handling
               circle.addEventListener('click', () => {
-                // mark selected visual state on circles (non-invasive)
-                this.colourCircles.forEach(c => c.classList.toggle('selected', c === circle));
                 const selectedColour = circle.dataset.colour || null;
                 this.setColour(selectedColour);
+              });
+            });
+          }
+
+          // Attach click handlers to configuration options (if any)
+          if (this.configOptions && this.configOptions.length > 0) {
+            this.configOptions.forEach(opt => {
+              opt.addEventListener('click', () => {
+                const selectedConfig = opt.dataset.config || null;
+                this.setConfig(selectedConfig);
               });
             });
           }
@@ -252,20 +299,41 @@
           if (domActiveImage && domActiveImage.dataset.colour) {
             defaultColour = domActiveImage.dataset.colour;
           } else if (this.colourCircles.length > 0) {
-            const activeCircle = this.colourCircles.find(c => c.classList.contains('active')) || this.colourCircles[0];
+            const activeCircle =
+              this.colourCircles.find(c => c.classList.contains('active')) ||
+              this.colourCircles[0];
             if (activeCircle) defaultColour = activeCircle.dataset.colour;
           } else {
             const keys = Object.keys(this.colourMap);
             defaultColour = keys.length ? keys[0] : null;
           }
 
-          // Apply initial state
+          // Determine default configuration:
+          // 1) if active image has data-config -> use that
+          // 2) else if a config option has .active or first one -> use its config
+          let defaultConfig = null;
+          if (domActiveImage && domActiveImage.dataset.config) {
+            defaultConfig = domActiveImage.dataset.config;
+          } else if (this.configOptions && this.configOptions.length > 0) {
+            const activeCfg =
+              this.configOptions.find(o => o.classList.contains('active')) ||
+              this.configOptions[0];
+            if (activeCfg) defaultConfig = activeCfg.dataset.config;
+          }
+
+          this.currentConfig = defaultConfig || null;
+
+          // Apply initial config visual state
+          if (this.currentConfig && this.configOptions && this.configOptions.length > 0) {
+            this.configOptions.forEach(o =>
+              o.classList.toggle('active', o.dataset.config === this.currentConfig)
+            );
+          }
+
+          // Apply initial colour/config state
           if (defaultColour === 'default' || defaultColour == null) {
-            // If default or null, show all images
-            this.setColour(defaultColour === 'default' ? null : null);
+            this.setColour(null);
           } else {
-            // select the default colour circle visually (if present)
-            this.colourCircles.forEach(c => c.classList.toggle('selected', c.dataset.colour === defaultColour));
             this.setColour(defaultColour);
           }
         }
