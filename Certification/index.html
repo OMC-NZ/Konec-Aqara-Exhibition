@@ -112,20 +112,34 @@
   const GITHUB_REPO   = "Konec-Aqara-Exhibition";
   const GITHUB_BRANCH = "main";
 
-  async function fetchDir(path) {
-    const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodeURIComponent(path)}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error("GitHub API error for " + path + ": " + res.status);
-    }
-    return res.json();
+function buildGithubUrl(path) {
+  // Encode each path segment separately so slashes stay as slashes
+  const encodedPath = path
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/");
+
+  return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodedPath}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
+}
+
+async function fetchDir(path) {
+  const url = buildGithubUrl(path);
+  const res = await fetch(url);
+  if (!res.ok) {
+    // This will show a more useful error in the browser console
+    throw new Error("GitHub API error for " + path + ": " + res.status + " " + res.statusText);
   }
+  return res.json();
+}
 
   async function buildTreeFromGitHub(path) {
     const items = await fetchDir(path);
 
     const dirs = items.filter(i => i.type === "dir");
-    const files = items.filter(i => i.type === "file");
+    const files = items.filter(
+  i => i.type === "file" && !(i.name === "index.html" && i.path === "Certification/index.html")
+);
+
 
     dirs.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
     files.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
