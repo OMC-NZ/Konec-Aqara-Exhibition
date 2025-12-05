@@ -107,74 +107,16 @@
 </div>
 
 <script>
-  // >>>> these are now set correctly for your repo <<<<
-  const GITHUB_OWNER  = "OMC-NZ";
-  const GITHUB_REPO   = "Konec-Aqara-Exhibition";
-  const GITHUB_BRANCH = "main";
-
-function buildGithubUrl(path) {
-  // Encode each path segment separately so slashes stay as slashes
-  const encodedPath = path
-    .split("/")
-    .map(encodeURIComponent)
-    .join("/");
-
-  return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodedPath}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
-}
-
-async function fetchDir(path) {
-  const url = buildGithubUrl(path);
-  const res = await fetch(url);
-  if (!res.ok) {
-    // This will show a more useful error in the browser console
-    throw new Error("GitHub API error for " + path + ": " + res.status + " " + res.statusText);
-  }
-  return res.json();
-}
-
-  async function buildTreeFromGitHub(path) {
-    const items = await fetchDir(path);
-
-    const dirs = items.filter(i => i.type === "dir");
-    const files = items.filter(
-  i => i.type === "file" && !(i.name === "index.html" && i.path === "Certification/index.html")
-);
-
-
-    dirs.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
-    files.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
-
-    const children = [];
-
-    // FOLDERS
-    for (const dir of dirs) {
-      const subtree = await buildTreeFromGitHub(dir.path);
-      children.push({
-        type: "folder",
-        name: dir.name,
-        children: subtree.children
-      });
+  async function fetchTree() {
+    const res = await fetch("/api/certification-tree");
+    if (!res.ok) {
+      throw new Error("Failed to load certification tree: " + res.status);
     }
-
-    // FILES
-    for (const file of files) {
-      children.push({
-        type: "file",
-        name: file.name,
-        // file.path is like "Certification/..."; we want "/Certification/..."
-        path: "/" + file.path
-      });
-    }
-
-    return {
-      type: "folder",
-      name: path.split("/").pop() || path,
-      children
-    };
+    return res.json();
   }
 
   function renderTree(root, container) {
-    container.innerHTML = ""; // clear "Loading..." text
+    container.innerHTML = ""; // clear "Loading..."
 
     if (!root.children || root.children.length === 0) {
       container.innerHTML = "<li>No certifications found.</li>";
@@ -208,7 +150,7 @@ async function fetchDir(path) {
 
         const link = document.createElement("a");
         link.textContent = item.name;
-        link.href = item.path;       // e.g. /Certification/... on your site
+        link.href = item.path;         // e.g. /Certification/... on your site
         link.target = "_blank";
         link.rel = "noopener noreferrer";
 
@@ -221,7 +163,7 @@ async function fetchDir(path) {
   (async function init() {
     const treeRoot = document.getElementById("tree");
     try {
-      const tree = await buildTreeFromGitHub("Certification");
+      const tree = await fetchTree();
       renderTree(tree, treeRoot);
     } catch (err) {
       console.error(err);
