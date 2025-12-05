@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aqara Aus/NZ Certifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px 24px 32px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+    .tree {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .tree li {
+      margin: 2px 0;
+    }
+    .folder > .folder-header {
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+    }
+    .folder > .folder-header:hover {
+      background: #f3f4f6;
+    }
+    .folder > .folder-header::before {
+      content: "▶";
+      display: inline-block;
+      width: 1em;
+      margin-right: 4px;
+      font-size: 0.85em;
+      transform-origin: center;
+    }
+    .folder.open > .folder-header::before {
+      content: "▼";
+    }
+    .folder > .children {
+      list-style: none;
+      margin: 2px 0 2px 20px;
+      padding-left: 10px;
+      border-left: 1px solid #e5e7eb;
+      display: none;
+    }
+    .folder.open > .children {
+      display: block;
+    }
+    .file a {
+      text-decoration: none;
+      color: #1f2933;
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .file a:hover {
+      background: #e5f0ff;
+      text-decoration: underline;
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .page {
+        margin: 16px;
+        padding: 16px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>Aqara Aus/NZ Certifications</h1>
+
+  <ul id="tree" class="tree">
+    <li>Loading certifications...</li>
+  </ul>
+
+  <p class="note">
+    Click a folder to expand it. Click a file name to open it in a new tab.
+  </p>
+</div>
+
+<script>
+  function renderTree(root, container) {
+    if (!root.children) return;
+    container.innerHTML = ""; // clear "Loading..." text
+
+    root.children.forEach(function (item) {
+      var li = document.createElement("li");
+
+      if (item.type === "folder") {
+        li.classList.add("folder");
+
+        var header = document.createElement("div");
+        header.classList.add("folder-header");
+        header.textContent = item.name;
+
+        var childrenUl = document.createElement("ul");
+        childrenUl.classList.add("children");
+
+        header.addEventListener("click", function () {
+          li.classList.toggle("open");
+        });
+
+        li.appendChild(header);
+        li.appendChild(childrenUl);
+        container.appendChild(li);
+
+        renderTree(item, childrenUl);
+      } else if (item.type === "file") {
+        li.classList.add("file");
+
+        var link = document.createElement("a");
+        link.textContent = item.name;
+        link.href = item.path;        // absolute path from API
+        link.target = "_blank";       // open in new tab
+        link.rel = "noopener noreferrer";
+
+        li.appendChild(link);
+        container.appendChild(li);
+      }
+    });
+  }
+
+  // Fetch the tree from the serverless function
+  fetch("/api/certification-tree")
+    .then(function (res) {
+      if (!res.ok) {
+        throw new Error("Failed to load certification tree");
+      }
+      return res.json();
+    })
+    .then(function (data) {
+      var treeRoot = document.getElementById("tree");
+      renderTree(data, treeRoot);
+    })
+    .catch(function (err) {
+      console.error(err);
+      var treeRoot = document.getElementById("tree");
+      treeRoot.innerHTML = "<li>Unable to load certifications list.</li>";
+    });
+</script>
+</body>
+</html>
