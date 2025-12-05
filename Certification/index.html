@@ -25,6 +25,44 @@
       margin: 0 0 20px;
       text-align: center;
     }
+
+    /* Search bar */
+    .search-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-bar input[type="text"] {
+      flex: 1 1 220px;
+      max-width: 320px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      font-size: 0.95rem;
+    }
+    .search-bar button {
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      background: #2563eb;
+      color: #ffffff;
+    }
+    .search-bar button:hover {
+      background: #1d4ed8;
+    }
+    .search-bar small {
+      width: 100%;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.8rem;
+    }
+
+    /* Tree */
     .tree {
       list-style: none;
       margin: 0;
@@ -76,6 +114,42 @@
       background: #e5f0ff;
       text-decoration: underline;
     }
+
+    /* Search results */
+    #searchResults {
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    #searchResults h2 {
+      font-size: 1rem;
+      margin: 0 0 4px;
+    }
+    #searchResults p {
+      margin: 0 0 6px;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    #searchResults ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #searchResults li {
+      margin: 2px 0;
+    }
+    #searchResults a {
+      text-decoration: none;
+      color: #1f2933;
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    #searchResults a:hover {
+      background: #e5f0ff;
+      text-decoration: underline;
+    }
+
     .note {
       margin-top: 10px;
       font-size: 0.85rem;
@@ -97,6 +171,17 @@
 <div class="page">
   <h1>Aqara Aus/NZ Certifications</h1>
 
+  <!-- Search bar -->
+  <div class="search-bar">
+    <input id="searchInput" type="text" placeholder="Search file name… (e.g. model, cert ID, etc.)">
+    <button id="searchButton" type="button">Search</button>
+    <small>Searches by file name; results open in a new tab.</small>
+  </div>
+
+  <!-- Search results -->
+  <div id="searchResults"></div>
+
+  <!-- Folder tree -->
   <ul id="tree" class="tree">
     <li>Loading certifications...</li>
   </ul>
@@ -107,6 +192,7 @@
 </div>
 
 <script>
+  // Fetch tree from your existing serverless function
   async function fetchTree() {
     const res = await fetch("/api/certification-tree");
     if (!res.ok) {
@@ -115,6 +201,7 @@
     return res.json();
   }
 
+  // Render the folder/file tree
   function renderTree(root, container) {
     container.innerHTML = ""; // clear "Loading..."
 
@@ -160,18 +247,120 @@
     });
   }
 
+  // Flatten the tree into an array of files with full path
+  function collectFiles(node, currentPath, accumulator) {
+    const pathPrefix = currentPath ? currentPath + "/" : "";
+    if (!node || !node.children) return;
+
+    node.children.forEach(child => {
+      if (child.type === "folder") {
+        const nextPath = pathPrefix + child.name;
+        collectFiles(child, nextPath, accumulator);
+      } else if (child.type === "file") {
+        accumulator.push({
+          name: child.name,
+          path: child.path,
+          folderPath: currentPath || ""
+        });
+      }
+    });
+  }
+
+  // Render search results
+  function renderSearchResults(files, query) {
+    const container = document.getElementById("searchResults");
+    const q = (query || "").trim();
+
+    if (!q) {
+      container.innerHTML = "";
+      return;
+    }
+
+    if (!files.length) {
+      container.innerHTML = `
+        <h2>Search results</h2>
+        <p>No files found matching "<strong>${escapeHtml(q)}</strong>".</p>
+      `;
+      return;
+    }
+
+    const listItems = files.map(file => {
+      const locationText = file.folderPath ? ` (${file.folderPath})` : "";
+      return `
+        <li>
+          <a href="${file.path}" target="_blank" rel="noopener noreferrer">
+            ${escapeHtml(file.name)}
+          </a>
+          <span style="font-size: 0.8rem; color: #6b7280;">${escapeHtml(locationText)}</span>
+        </li>
+      `;
+    }).join("");
+
+    container.innerHTML = `
+      <h2>Search results</h2>
+      <p>Found ${files.length} file${files.length === 1 ? "" : "s"} for "<strong>${escapeHtml(q)}</strong>":</p>
+      <ul>
+        ${listItems}
+      </ul>
+    `;
+  }
+
+  // Basic HTML escaping for safety
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
   (async function init() {
     const treeRoot = document.getElementById("tree");
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+
+    let treeData = null;
+    let allFiles = [];
+
     try {
-      const tree = await fetchTree();
-      renderTree(tree, treeRoot);
+      treeData = await fetchTree();
+      renderTree(treeData, treeRoot);
+
+      // Build flat file list for search
+      allFiles = [];
+      collectFiles(treeData, "Certification", allFiles);
     } catch (err) {
       console.error(err);
       treeRoot.innerHTML = "<li>Unable to load certifications list.</li>";
+      return;
     }
+
+    function performSearch() {
+      const q = (searchInput.value || "").trim().toLowerCase();
+      if (!q) {
+        renderSearchResults([], "");
+        return;
+      }
+
+      const matches = allFiles.filter(f =>
+        f.name.toLowerCase().includes(q) ||
+        (f.folderPath && f.folderPath.toLowerCase().includes(q))
+      );
+
+      renderSearchResults(matches, searchInput.value);
+    }
+
+    // Button click
+    searchButton.addEventListener("click", performSearch);
+
+    // Enter key in the input
+    searchInput.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        performSearch();
+      }
+    });
   })();
 </script>
-
 </body>
 </html>
-
