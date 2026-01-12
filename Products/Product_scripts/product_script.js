@@ -1,6 +1,7 @@
 /* Full site JS - replace the existing JS with this block
    - Keeps redirect, menu, smooth scroll behaviors
-   - Replaces & standardises gallery logic (colour + configuration aware, per-gallery)
+   - Replaces & standardises gallery logic
+   - ADDS: Buy Now Modal Logic with "Out of Stock" support
 */
 
 (function () {
@@ -355,8 +356,91 @@
       if (mgr) mgr.changeImage(Number(direction) || 0);
     };
 
-    // If you previously had dot click logic bound to static .gallery-dot, this script rebuilds dots
-    // and binds clicks so you don't need the old event listeners.
+// ---------- Buy Now Modal Logic ----------
+    const buyNowLinks = document.querySelectorAll('.buy-now-link, .buy-now-btn');
+    const modal = document.getElementById('buy-now-modal');
+    const closeModal = document.querySelector('.close-modal');
+    const retailerList = document.getElementById('retailer-list');
+    const retailerData = document.getElementById('product-retailer-links');
+
+    if (modal && retailerData) {
+      const openModal = (e) => {
+        e.preventDefault(); 
+        
+        retailerList.innerHTML = '';
+        let hasLinks = false;
+        
+        Object.keys(retailerData.dataset).forEach(storeKey => {
+          const rawValue = retailerData.dataset[storeKey];
+          
+          // Skip if empty
+          if (!rawValue || rawValue.trim() === "") return;
+
+          // Split the value: URL | IMAGE_PATH
+          // We use 'split' and 'map' to trim whitespace instantly
+          const parts = rawValue.split('|').map(s => s.trim());
+          const url = parts[0];
+          const imagePath = parts[1];
+
+          // If we don't have an image path, we can't render the logo button correctly
+          // You could add a fallback text logic here if you wanted, but sticking to logos is cleaner.
+          if (!imagePath) return;
+
+          hasLinks = true;
+          const isOOS = url.toUpperCase() === "OOS";
+
+          // Create Container
+          let btn;
+          if (isOOS) {
+            btn = document.createElement('div'); // Div for OOS
+            btn.className = `retailer-btn oos ${storeKey}`;
+          } else {
+            btn = document.createElement('a'); // Link for active
+            btn.href = url;
+            btn.target = "_blank";
+            btn.rel = "noopener noreferrer";
+            btn.className = `retailer-btn ${storeKey}`;
+          }
+
+          // Create Image Element
+          const img = document.createElement('img');
+          img.src = imagePath;
+          // Use storeKey as alt text (capitalized)
+          img.alt = storeKey.charAt(0).toUpperCase() + storeKey.slice(1);
+          
+          btn.appendChild(img);
+          retailerList.appendChild(btn);
+        });
+
+        if (!hasLinks) {
+          window.location.href = "../Subpages/Stores.html";
+          return;
+        }
+
+        modal.classList.add('show');
+      };
+
+      buyNowLinks.forEach(btn => {
+        const linkWrapper = btn.closest('.buy-now-link');
+        if (linkWrapper) {
+          linkWrapper.addEventListener('click', openModal);
+        } else {
+          btn.addEventListener('click', openModal);
+        }
+      });
+
+      if (closeModal) {
+        closeModal.addEventListener('click', () => {
+          modal.classList.remove('show');
+        });
+      }
+
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+        }
+      });
+    }
 
   }); // end DOMContentLoaded
 })();
