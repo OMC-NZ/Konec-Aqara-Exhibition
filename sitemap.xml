@@ -3,7 +3,7 @@
 	<url>
 		<loc>https://www.aqarahome.nz</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/thetechnologystore 2</loc>
@@ -28,7 +28,7 @@
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming</loc>
 		<priority>0.75</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/jbhifi</loc>
@@ -58,7 +58,12 @@
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees</loc>
 		<priority>0.75</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
+	</url>
+	<url>
+		<loc>https://www.aqarahome.nz/Products/Light_Switch_H2_Vertical.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/pages/support.html</loc>
@@ -83,42 +88,42 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Subpages/Support.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Subpages/Stores.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Subpages/Products.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-11-14</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Subpages/Privacy Policy.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Subpages/About.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Wireless_Remote_Switch_H1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Wireless_Mini_Switch_T1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Water_Leak_Sensor_T1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Vibration_Sensor.html</loc>
@@ -128,7 +133,7 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Valve_Controller_T1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Temperature_and_Humidity_Sensor_T1.html</loc>
@@ -138,12 +143,12 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Smart_Lock_U50.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Smart_Lock_U100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Smart_Door_Lock_U300.html</loc>
@@ -158,27 +163,27 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Smart_Door_Lock_D100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Smart_Door_Lock_A100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Roller_Shade_Driver_E1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Presence_Sensor_FP2.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Presence_Sensor_FP1E.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Motion_and_Light_Sensor_P2.html</loc>
@@ -188,7 +193,7 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Motion_Sensor_P1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/MASTER_Product_Page_Template.html</loc>
@@ -198,52 +203,52 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/LED_Strip_T1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/LED_Bulb_T2.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/LED_Bulb_T1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Hub_M3.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Hub_M2.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Hub_M100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Hub_E1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Dual_Relay_Module_T2.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Doorbell_G4.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Doorbell_Camera_Hub_G410.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Door_and_Window_Sensor_T1.html</loc>
@@ -258,22 +263,22 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Curtain_Driver_E1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-15</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Cube_T1_Pro.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Climate_Sensor_W100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Ceiling_Light_T1M.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Camera_Hub_G5_Pro_Wifi.html</loc>
@@ -288,22 +293,27 @@
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Camera_Hub_G3.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Camera_Hub_G2H_Pro.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Camera_G100.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/Products/Camera_E1.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-12-16</lastmod>
+	</url>
+	<url>
+		<loc>https://www.aqarahome.nz/Products/Light_Switch_H2_Horizontal.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-12-08</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/thetechnologystore 2/Product_Pages/Wireless_Mini_Switch_T1.html</loc>
@@ -798,192 +808,192 @@
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Wireless_Remote_Switch_H1_Double_Rocker.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Wireless_Mini_Switch_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Water_Leak_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Vibration_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Valve_Controller_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Temperature_Humidity_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Lock_U50.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Lock_U300.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Lock_U200.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Lock_U100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Door_Lock_D100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Smart_Door_Lock_A100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Roller_Shade_Driver_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Presence_Sensor_FP2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Presence_Sensor_FP1E.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Motion_Sensor_P1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Motion_Light_Sensor_P2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/LED_Strip_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/LED_Bulb_T2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/LED_Bulb_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Hub_M3.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Hub_M2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Hub_M100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Hub_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Dual_Relay_Module_T2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Doorbell_G4.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Doorbell_Camera_Hub_G410.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Door_Window_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Door_Window_Sensor_P2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Curtain_Driver_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Cube_T1_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Climate_Sensor_W100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Ceiling_Light_T1M.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Camera_Hub_G5_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Camera_Hub_G3.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Camera_Hub_G2H_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Camera_G100_Select.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/Camera_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/noelleeming/Product_Pages/01.Test Product.html</loc>
@@ -1618,192 +1628,192 @@
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Wireless_Remote_Switch_H1_Double_Rocker.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Wireless_Mini_Switch_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Water_Leak_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Vibration_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Valve_Controller_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Temperature_Humidity_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Lock_U50.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Lock_U300.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Lock_U200.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Lock_U100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Door_Lock_D100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Smart_Door_Lock_A100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Roller_Shade_Driver_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Presence_Sensor_FP2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Presence_Sensor_FP1E.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Motion_Sensor_P1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Motion_Light_Sensor_P2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/LED_Strip_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/LED_Bulb_T2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/LED_Bulb_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Hub_M3.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Hub_M2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Hub_M100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Hub_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Dual_Relay_Module_T2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Doorbell_G4.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Doorbell_Camera_Hub_G410.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Door_Window_Sensor_T1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Door_Window_Sensor_P2.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Curtain_Driver_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Cube_T1_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Climate_Sensor_W100.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Ceiling_Light_T1M.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Camera_Hub_G5_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Camera_Hub_G3.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Camera_Hub_G2H_Pro.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Camera_G100_Select.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/Camera_E1.html</loc>
 		<priority>0.25</priority>
-		<lastmod>2025-09-16</lastmod>
+		<lastmod>2025-10-28</lastmod>
 	</url>
 	<url>
 		<loc>https://www.aqarahome.nz/2degrees/Product_Pages/01.Test Product.html</loc>
