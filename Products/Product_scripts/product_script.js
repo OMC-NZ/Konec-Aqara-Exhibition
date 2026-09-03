@@ -435,12 +435,39 @@
         });
       }
 
-      window.addEventListener('click', (e) => {
+window.addEventListener('click', (e) => {
         if (e.target === modal) {
           modal.classList.remove('show');
         }
       });
+    } // <--- End of Buy Now modal block
+
+    // ==========================================
+    // PASTE THE FADE CONTROLLER SCRIPT RIGHT HERE
+    // ==========================================
+const switchIntervalMs = 3000; // Time spent showing/hiding the hat
+const fadeDurationSec = 1.5;  // Length of the fade transition
+
+const fadeImages = document.querySelectorAll('.section2 .fade-img');
+
+if (fadeImages.length >= 2) {
+    // Apply transition speed to Image 2
+    fadeImages[1].style.transition = `opacity ${fadeDurationSec}s ease-in-out`;
+
+    let hatVisible = false;
+
+    function toggleHat() {
+        hatVisible = !hatVisible;
+        
+        if (hatVisible) {
+            fadeImages[1].classList.add('active'); // Fade image 2 (hat) ON
+        } else {
+            fadeImages[1].classList.remove('active'); // Fade image 2 (hat) OFF
+        }
     }
 
-  }); // end DOMContentLoaded
-})();
+    setInterval(toggleHat, switchIntervalMs);
+}
+
+  }); // <--- End of DOMContentLoaded (Do NOT delete this)
+})(); // <--- End of IIFE wrapper

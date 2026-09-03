@@ -803,6 +803,14 @@ a.buy-now-link {
     margin: 0 auto;
 }
 
+/* Container to stack the fading images */
+.fade-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Base rules for images/videos in section 2 */
 .section2 img, .section2 video {
     width: 100%;                
     height: 100%;               /* Fill container height on desktop */
@@ -811,8 +819,43 @@ a.buy-now-link {
     display: block;             
 }
 
+/* Specific fading styles overriding/extending the defaults */
+.fade-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;                
+    height: 100%;               
+    object-fit: cover;          
+    object-position: center center; 
+    display: block;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Image 1 (No hat): Stays permanently visible in the background */
+.fade-img:nth-child(1) {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Image 2 (With hat): Sits on top and fades in/out */
+.fade-img:nth-child(2) {
+    opacity: 0;
+    z-index: 2; /* Ensures Image 2 always layers above Image 1 */
+}
+
+/* When active, Image 2 fades smoothly over Image 1 */
+.fade-img:nth-child(2).active {
+    opacity: 1;
+}
+
 /* Mobile-first adjustments */
 @media (max-width: 1000px) {
+    .fade-container {
+        height: auto;
+        min-height: 100%;
+    }
+
     .section2 img, .section2 video {
         width: 100%;            /* Always fill width */
         height: auto;           /* Maintain aspect ratio */
